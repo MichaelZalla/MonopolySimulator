@@ -1,0 +1,3116 @@
+++++++++++++++++++++
+Starting round 1
+Player 0 starting on Go
+Player 0 rolls 6+6
+Visited: 12 now: 1
+Player 0 landed on Electric Company
+Player 0 rolls 5+3
+Visited: 20 now: 1
+Player 0 landed on Free Parking
+Player 1 starting on Go
+Player 1 rolls 1+4
+Visited: 5 now: 1
+Player 1 landed on Reading Railroad
+Player 2 starting on Go
+Player 2 rolls 1+2
+Visited: 3 now: 1
+Player 2 landed on Baltic Avenue
+Player 3 starting on Go
+Player 3 rolls 5+2
+Visited: 7 now: 1
+Player 3 landed on Chance
+ -> Chance - Advance to Go
+Player 4 starting on Go
+Player 4 rolls 6+6
+Visited: 12 now: 2
+Player 4 landed on Electric Company
+Player 4 rolls 3+5
+Visited: 20 now: 2
+Player 4 landed on Free Parking
+Player 5 starting on Go
+Player 5 rolls 4+6
+Visited: 10 now: 1
+Player 5 landed on In Jail/Just Visiting
+++++++++++++++++++++
+Starting round 2
+Player 0 starting on Free Parking
+Player 0 rolls 3+6
+Visited: 29 now: 1
+Player 0 landed on Marvin Gardens
+Player 1 starting on Reading Railroad
+Player 1 rolls 2+3
+Visited: 10 now: 2
+Player 1 landed on In Jail/Just Visiting
+Player 2 starting on Baltic Avenue
+Player 2 rolls 2+3
+Visited: 8 now: 1
+Player 2 landed on Vermont Avenue
+Player 3 starting on Go
+Player 3 rolls 2+4
+Visited: 6 now: 1
+Player 3 landed on Oriental Avenue
+Player 4 starting on Free Parking
+Player 4 rolls 5+2
+Visited: 27 now: 1
+Player 4 landed on Ventnor Avenue
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 4+4
+Visited: 18 now: 1
+Player 5 landed on Tennessee Avenue
+Player 5 rolls 3+3
+Visited: 24 now: 1
+Player 5 landed on Illinois Avenue
+Player 5 rolls 2+2
+Player 5 rolled 3 doubles, go to jail.
+++++++++++++++++++++
+Starting round 3
+Player 0 starting on Marvin Gardens
+Player 0 rolls 4+6
+Visited: 39 now: 1
+Player 0 landed on Boardwalk
+Player 1 starting on In Jail/Just Visiting
+Player 1 rolls 2+3
+Visited: 15 now: 1
+Player 1 landed on Pennsylvania Railroad
+Player 2 starting on Vermont Avenue
+Player 2 rolls 3+3
+Visited: 14 now: 1
+Player 2 landed on Virginia Avenue
+Player 2 rolls 6+3
+Visited: 23 now: 1
+Player 2 landed on Indiana Avenue
+Player 3 starting on Oriental Avenue
+Player 3 rolls 5+1
+Visited: 12 now: 3
+Player 3 landed on Electric Company
+Player 4 starting on Ventnor Avenue
+Player 4 rolls 3+4
+Visited: 34 now: 1
+Player 4 landed on Pennsylvania Avenue
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 5+2
+ - still in jail
+++++++++++++++++++++
+Starting round 4
+Player 0 starting on Boardwalk
+Player 0 rolls 2+2
+Visited: 3 now: 2
+Player 0 landed on Baltic Avenue
+Player 0 rolls 6+4
+Visited: 13 now: 1
+Player 0 landed on States Avenue
+Player 1 starting on Pennsylvania Railroad
+Player 1 rolls 5+6
+Visited: 26 now: 1
+Player 1 landed on Alantic Avenue
+Player 2 starting on Indiana Avenue
+Player 2 rolls 2+2
+Visited: 27 now: 2
+Player 2 landed on Ventnor Avenue
+Player 2 rolls 2+5
+Visited: 34 now: 2
+Player 2 landed on Pennsylvania Avenue
+Player 3 starting on Electric Company
+Player 3 rolls 5+1
+Visited: 18 now: 2
+Player 3 landed on Tennessee Avenue
+Player 4 starting on Pennsylvania Avenue
+Player 4 rolls 3+6
+Visited: 3 now: 3
+Player 4 landed on Baltic Avenue
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 5+1
+ - still in jail
+++++++++++++++++++++
+Starting round 5
+Player 0 starting on States Avenue
+Player 0 rolls 2+4
+Visited: 19 now: 1
+Player 0 landed on New York Avenue
+Player 1 starting on Alantic Avenue
+Player 1 rolls 4+4
+Visited: 34 now: 3
+Player 1 landed on Pennsylvania Avenue
+Player 1 rolls 3+1
+Visited: 38 now: 1
+Player 1 landed on Luxury Tax
+Player 2 starting on Pennsylvania Avenue
+Player 2 rolls 3+6
+Visited: 3 now: 4
+Player 2 landed on Baltic Avenue
+Player 3 starting on Tennessee Avenue
+Player 3 rolls 1+5
+Visited: 24 now: 2
+Player 3 landed on Illinois Avenue
+Player 4 starting on Baltic Avenue
+Player 4 rolls 5+2
+Visited: 10 now: 4
+Player 4 landed on In Jail/Just Visiting
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 2+1
+ - still in jail
+++++++++++++++++++++
+Starting round 6
+Player 0 starting on New York Avenue
+Player 0 rolls 4+1
+Visited: 24 now: 3
+Player 0 landed on Illinois Avenue
+Player 1 starting on Luxury Tax
+Player 1 rolls 5+5
+Visited: 8 now: 2
+Player 1 landed on Vermont Avenue
+Player 1 rolls 6+3
+Visited: 17 now: 1
+Player 1 landed on Community Chest
+ -> Community Chest - Advance to Go
+Player 2 starting on Baltic Avenue
+Player 2 rolls 4+3
+Visited: 10 now: 5
+Player 2 landed on In Jail/Just Visiting
+Player 3 starting on Illinois Avenue
+Player 3 rolls 4+5
+Visited: 33 now: 1
+Player 3 landed on Community Chest
+ -> Community Chest - Bank error in your favor
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 1+2
+Visited: 13 now: 2
+Player 4 landed on States Avenue
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 6+3
+ - Third roll from jail, releasing.
+Visited: 19 now: 2
+Player 5 landed on New York Avenue
+++++++++++++++++++++
+Starting round 7
+Player 0 starting on Illinois Avenue
+Player 0 rolls 6+1
+Visited: 31 now: 1
+Player 0 landed on Pacific Avenue
+Player 1 starting on Go
+Player 1 rolls 1+1
+Visited: 2 now: 1
+Player 1 landed on Community Chest
+ -> Community Chest - Doctor's fees
+Player 1 rolls 5+1
+Visited: 8 now: 3
+Player 1 landed on Vermont Avenue
+Player 2 starting on In Jail/Just Visiting
+Player 2 rolls 1+6
+Visited: 17 now: 2
+Player 2 landed on Community Chest
+ -> Community Chest - From sale of stock you get $50
+Player 3 starting on Community Chest
+Player 3 rolls 4+5
+Visited: 2 now: 2
+Player 3 landed on Community Chest
+ -> Community Chest - Get Out of Jail Free
+Player 4 starting on States Avenue
+Player 4 rolls 2+2
+Visited: 17 now: 3
+Player 4 landed on Community Chest
+ -> Community Chest - Go to Jail
+Player 4 rolls 1+5
+ - still in jail
+Player 5 starting on New York Avenue
+Player 5 rolls 2+3
+Visited: 24 now: 4
+Player 5 landed on Illinois Avenue
+++++++++++++++++++++
+Starting round 8
+Player 0 starting on Pacific Avenue
+Player 0 rolls 2+4
+Visited: 37 now: 1
+Player 0 landed on Park Place
+Player 1 starting on Vermont Avenue
+Player 1 rolls 5+5
+Visited: 18 now: 3
+Player 1 landed on Tennessee Avenue
+Player 1 rolls 4+5
+Visited: 27 now: 3
+Player 1 landed on Ventnor Avenue
+Player 2 starting on Community Chest
+Player 2 rolls 6+6
+Visited: 29 now: 2
+Player 2 landed on Marvin Gardens
+Player 2 rolls 1+1
+Visited: 31 now: 2
+Player 2 landed on Pacific Avenue
+Player 2 rolls 3+5
+Visited: 39 now: 2
+Player 2 landed on Boardwalk
+Player 3 starting on Community Chest
+Player 3 rolls 2+5
+Visited: 9 now: 1
+Player 3 landed on Connecticut Avenue
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 1+5
+ - still in jail
+Player 5 starting on Illinois Avenue
+Player 5 rolls 1+1
+Visited: 26 now: 2
+Player 5 landed on Alantic Avenue
+Player 5 rolls 6+4
+Visited: 36 now: 1
+Player 5 landed on Chance
+ -> Chance - Advance to Illinois Ave.
+++++++++++++++++++++
+Starting round 9
+Player 0 starting on Park Place
+Player 0 rolls 4+2
+Visited: 3 now: 5
+Player 0 landed on Baltic Avenue
+Player 1 starting on Ventnor Avenue
+Player 1 rolls 3+6
+Visited: 36 now: 2
+Player 1 landed on Chance
+ -> Chance - Advance to St. Charles Place
+Player 2 starting on Boardwalk
+Player 2 rolls 5+3
+Visited: 7 now: 2
+Player 2 landed on Chance
+ -> Chance - Advance token to nearest Utility
+Player 3 starting on Connecticut Avenue
+Player 3 rolls 3+6
+Visited: 18 now: 4
+Player 3 landed on Tennessee Avenue
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 5+3
+ - still in jail
+Player 5 starting on Illinois Avenue
+Player 5 rolls 2+3
+Visited: 29 now: 3
+Player 5 landed on Marvin Gardens
+++++++++++++++++++++
+Starting round 10
+Player 0 starting on Baltic Avenue
+Player 0 rolls 2+4
+Visited: 9 now: 2
+Player 0 landed on Connecticut Avenue
+Player 1 starting on St. Charles Place
+Player 1 rolls 3+6
+Visited: 20 now: 3
+Player 1 landed on Free Parking
+Player 2 starting on Electric Company
+Player 2 rolls 3+4
+Visited: 19 now: 3
+Player 2 landed on New York Avenue
+Player 3 starting on Tennessee Avenue
+Player 3 rolls 5+3
+Visited: 26 now: 3
+Player 3 landed on Alantic Avenue
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 5+4
+ - Third roll from jail, releasing.
+Visited: 19 now: 4
+Player 4 landed on New York Avenue
+Player 5 starting on Marvin Gardens
+Player 5 rolls 1+1
+Visited: 31 now: 3
+Player 5 landed on Pacific Avenue
+Player 5 rolls 3+5
+Visited: 39 now: 3
+Player 5 landed on Boardwalk
+++++++++++++++++++++
+Starting round 11
+Player 0 starting on Connecticut Avenue
+Player 0 rolls 4+4
+Visited: 17 now: 4
+Player 0 landed on Community Chest
+ -> Community Chest - Grand Opera opening
+Player 0 rolls 6+5
+Visited: 28 now: 1
+Player 0 landed on Water Works
+Player 1 starting on Free Parking
+Player 1 rolls 6+2
+Visited: 28 now: 2
+Player 1 landed on Water Works
+Player 2 starting on New York Avenue
+Player 2 rolls 3+3
+Visited: 25 now: 1
+Player 2 landed on B. & O. Railroad
+Player 2 rolls 3+3
+Visited: 31 now: 4
+Player 2 landed on Pacific Avenue
+Player 2 rolls 1+4
+Visited: 36 now: 3
+Player 2 landed on Chance
+ -> Chance - Advance to nearest Railroad
+Player 3 starting on Alantic Avenue
+Player 3 rolls 1+5
+Visited: 32 now: 1
+Player 3 landed on North Carolina AVenue
+Player 4 starting on New York Avenue
+Player 4 rolls 5+5
+Visited: 29 now: 4
+Player 4 landed on Marvin Gardens
+Player 4 rolls 5+1
+Visited: 35 now: 1
+Player 4 landed on Short Line
+Player 5 starting on Boardwalk
+Player 5 rolls 5+3
+Visited: 7 now: 3
+Player 5 landed on Chance
+ -> Chance - Bank pays you divident of $50
+++++++++++++++++++++
+Starting round 12
+Player 0 starting on Water Works
+Player 0 rolls 6+1
+Visited: 35 now: 2
+Player 0 landed on Short Line
+Player 1 starting on Water Works
+Player 1 rolls 3+2
+Visited: 33 now: 2
+Player 1 landed on Community Chest
+ -> Community Chest - Xmas fund matures
+Player 2 starting on Chance
+Player 2 rolls 4+4
+Visited: 4 now: 1
+Player 2 landed on Income Tax
+Player 2 rolls 3+2
+Visited: 9 now: 3
+Player 2 landed on Connecticut Avenue
+Player 3 starting on North Carolina AVenue
+Player 3 rolls 5+4
+Visited: 1 now: 1
+Player 3 landed on Mediterranean Avenue
+Player 4 starting on Short Line
+Player 4 rolls 1+6
+Visited: 2 now: 3
+Player 4 landed on Community Chest
+ -> Community Chest - Income tax refund
+Player 5 starting on Chance
+Player 5 rolls 5+3
+Visited: 15 now: 2
+Player 5 landed on Pennsylvania Railroad
+++++++++++++++++++++
+Starting round 13
+Player 0 starting on Short Line
+Player 0 rolls 6+2
+Visited: 3 now: 6
+Player 0 landed on Baltic Avenue
+Player 1 starting on Community Chest
+Player 1 rolls 5+5
+Visited: 3 now: 7
+Player 1 landed on Baltic Avenue
+Player 1 rolls 3+3
+Visited: 9 now: 4
+Player 1 landed on Connecticut Avenue
+Player 1 rolls 3+6
+Visited: 18 now: 5
+Player 1 landed on Tennessee Avenue
+Player 2 starting on Connecticut Avenue
+Player 2 rolls 1+3
+Visited: 13 now: 3
+Player 2 landed on States Avenue
+Player 3 starting on Mediterranean Avenue
+Player 3 rolls 5+5
+Visited: 11 now: 2
+Player 3 landed on St. Charles Place
+Player 3 rolls 2+3
+Visited: 16 now: 1
+Player 3 landed on St. James Place
+Player 4 starting on Community Chest
+Player 4 rolls 4+3
+Visited: 9 now: 5
+Player 4 landed on Connecticut Avenue
+Player 5 starting on Pennsylvania Railroad
+Player 5 rolls 1+1
+Visited: 17 now: 5
+Player 5 landed on Community Chest
+ -> Community Chest - It is your birthday
+Player 5 rolls 3+3
+Visited: 23 now: 2
+Player 5 landed on Indiana Avenue
+Player 5 rolls 4+6
+Visited: 33 now: 3
+Player 5 landed on Community Chest
+ -> Community Chest - Life insurance matures
+++++++++++++++++++++
+Starting round 14
+Player 0 starting on Baltic Avenue
+Player 0 rolls 2+4
+Visited: 9 now: 6
+Player 0 landed on Connecticut Avenue
+Player 1 starting on Tennessee Avenue
+Player 1 rolls 2+2
+Visited: 22 now: 1
+Player 1 landed on Chance
+ -> Chance - Get Out of Jail Free
+Player 1 rolls 6+2
+Player 1 landed on go to jail.
+Player 2 starting on States Avenue
+Player 2 rolls 1+1
+Visited: 15 now: 3
+Player 2 landed on Pennsylvania Railroad
+Player 2 rolls 3+3
+Visited: 21 now: 1
+Player 2 landed on Kentucky Avenue
+Player 2 rolls 3+4
+Visited: 28 now: 3
+Player 2 landed on Water Works
+Player 3 starting on St. James Place
+Player 3 rolls 2+3
+Visited: 21 now: 2
+Player 3 landed on Kentucky Avenue
+Player 4 starting on Connecticut Avenue
+Player 4 rolls 6+1
+Visited: 16 now: 2
+Player 4 landed on St. James Place
+Player 5 starting on Community Chest
+Player 5 rolls 1+4
+Visited: 38 now: 2
+Player 5 landed on Luxury Tax
+++++++++++++++++++++
+Starting round 15
+Player 0 starting on Connecticut Avenue
+Player 0 rolls 6+1
+Visited: 16 now: 3
+Player 0 landed on St. James Place
+Player 1 starting on In Jail/Just Visiting
+Player 1 used a get out of jail free card
+Player 1 rolls 1+2
+Visited: 13 now: 4
+Player 1 landed on States Avenue
+Player 2 starting on Water Works
+Player 2 rolls 5+1
+Visited: 34 now: 4
+Player 2 landed on Pennsylvania Avenue
+Player 3 starting on Kentucky Avenue
+Player 3 rolls 3+3
+Visited: 27 now: 4
+Player 3 landed on Ventnor Avenue
+Player 3 rolls 6+6
+Visited: 39 now: 4
+Player 3 landed on Boardwalk
+Player 3 rolls 5+2
+Visited: 6 now: 2
+Player 3 landed on Oriental Avenue
+Player 4 starting on St. James Place
+Player 4 rolls 5+6
+Visited: 27 now: 5
+Player 4 landed on Ventnor Avenue
+Player 5 starting on Luxury Tax
+Player 5 rolls 1+4
+Visited: 3 now: 8
+Player 5 landed on Baltic Avenue
+++++++++++++++++++++
+Starting round 16
+Player 0 starting on St. James Place
+Player 0 rolls 2+3
+Visited: 21 now: 3
+Player 0 landed on Kentucky Avenue
+Player 1 starting on States Avenue
+Player 1 rolls 3+2
+Visited: 18 now: 6
+Player 1 landed on Tennessee Avenue
+Player 2 starting on Pennsylvania Avenue
+Player 2 rolls 1+3
+Visited: 38 now: 3
+Player 2 landed on Luxury Tax
+Player 3 starting on Oriental Avenue
+Player 3 rolls 1+1
+Visited: 8 now: 4
+Player 3 landed on Vermont Avenue
+Player 3 rolls 1+5
+Visited: 14 now: 2
+Player 3 landed on Virginia Avenue
+Player 4 starting on Ventnor Avenue
+Player 4 rolls 4+5
+Visited: 36 now: 4
+Player 4 landed on Chance
+ -> Chance - Go back 3 spaces
+ -> Community Chest - Pay hospital fees of $100
+Player 5 starting on Baltic Avenue
+Player 5 rolls 3+2
+Visited: 8 now: 5
+Player 5 landed on Vermont Avenue
+++++++++++++++++++++
+Starting round 17
+Player 0 starting on Kentucky Avenue
+Player 0 rolls 1+5
+Visited: 27 now: 6
+Player 0 landed on Ventnor Avenue
+Player 1 starting on Tennessee Avenue
+Player 1 rolls 3+5
+Visited: 26 now: 4
+Player 1 landed on Alantic Avenue
+Player 2 starting on Luxury Tax
+Player 2 rolls 5+2
+Visited: 5 now: 2
+Player 2 landed on Reading Railroad
+Player 3 starting on Virginia Avenue
+Player 3 rolls 2+1
+Visited: 17 now: 6
+Player 3 landed on Community Chest
+ -> Community Chest - Pay school fees of $150
+Player 4 starting on Community Chest
+Player 4 rolls 3+3
+Visited: 39 now: 5
+Player 4 landed on Boardwalk
+Player 4 rolls 2+2
+Visited: 3 now: 9
+Player 4 landed on Baltic Avenue
+Player 4 rolls 4+3
+Visited: 10 now: 8
+Player 4 landed on In Jail/Just Visiting
+Player 5 starting on Vermont Avenue
+Player 5 rolls 6+6
+Visited: 20 now: 4
+Player 5 landed on Free Parking
+Player 5 rolls 4+4
+Visited: 28 now: 4
+Player 5 landed on Water Works
+Player 5 rolls 2+3
+Visited: 33 now: 5
+Player 5 landed on Community Chest
+ -> Community Chest - Receive for Services $25
+++++++++++++++++++++
+Starting round 18
+Player 0 starting on Ventnor Avenue
+Player 0 rolls 4+4
+Visited: 35 now: 3
+Player 0 landed on Short Line
+Player 0 rolls 3+6
+Visited: 4 now: 2
+Player 0 landed on Income Tax
+Player 1 starting on Alantic Avenue
+Player 1 rolls 3+5
+Visited: 34 now: 5
+Player 1 landed on Pennsylvania Avenue
+Player 2 starting on Reading Railroad
+Player 2 rolls 3+6
+Visited: 14 now: 3
+Player 2 landed on Virginia Avenue
+Player 3 starting on Community Chest
+Player 3 rolls 4+4
+Visited: 25 now: 2
+Player 3 landed on B. & O. Railroad
+Player 3 rolls 3+3
+Visited: 31 now: 5
+Player 3 landed on Pacific Avenue
+Player 3 rolls 2+2
+Player 3 rolled 3 doubles, go to jail.
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 6+6
+Visited: 22 now: 2
+Player 4 landed on Chance
+ -> Chance - Go to Jail
+Player 4 rolls 6+5
+ - Third roll from jail, releasing.
+Visited: 21 now: 4
+Player 4 landed on Kentucky Avenue
+Player 5 starting on Community Chest
+Player 5 rolls 1+4
+Visited: 38 now: 4
+Player 5 landed on Luxury Tax
+++++++++++++++++++++
+Starting round 19
+Player 0 starting on Income Tax
+Player 0 rolls 1+2
+Visited: 7 now: 4
+Player 0 landed on Chance
+ -> Chance - Make general repairs on all your property
+Player 1 starting on Pennsylvania Avenue
+Player 1 rolls 1+4
+Visited: 39 now: 6
+Player 1 landed on Boardwalk
+Player 2 starting on Virginia Avenue
+Player 2 rolls 5+6
+Visited: 25 now: 3
+Player 2 landed on B. & O. Railroad
+Player 3 starting on In Jail/Just Visiting
+Player 3 used a get out of jail free card
+Player 3 rolls 6+2
+Visited: 18 now: 7
+Player 3 landed on Tennessee Avenue
+Player 4 starting on Kentucky Avenue
+Player 4 rolls 1+5
+Visited: 27 now: 7
+Player 4 landed on Ventnor Avenue
+Player 5 starting on Luxury Tax
+Player 5 rolls 4+3
+Visited: 5 now: 3
+Player 5 landed on Reading Railroad
+++++++++++++++++++++
+Starting round 20
+Player 0 starting on Chance
+Player 0 rolls 6+5
+Visited: 18 now: 8
+Player 0 landed on Tennessee Avenue
+Player 1 starting on Boardwalk
+Player 1 rolls 1+2
+Visited: 2 now: 4
+Player 1 landed on Community Chest
+ -> Community Chest - You are assessed for street repairs
+Player 2 starting on B. & O. Railroad
+Player 2 rolls 6+3
+Visited: 34 now: 6
+Player 2 landed on Pennsylvania Avenue
+Player 3 starting on Tennessee Avenue
+Player 3 rolls 4+4
+Visited: 26 now: 5
+Player 3 landed on Alantic Avenue
+Player 3 rolls 2+6
+Visited: 34 now: 7
+Player 3 landed on Pennsylvania Avenue
+Player 4 starting on Ventnor Avenue
+Player 4 rolls 3+3
+Visited: 33 now: 6
+Player 4 landed on Community Chest
+ -> Community Chest - You have won second prize in a beauty contest
+Player 4 rolls 6+2
+Visited: 1 now: 2
+Player 4 landed on Mediterranean Avenue
+Player 5 starting on Reading Railroad
+Player 5 rolls 5+1
+Visited: 11 now: 3
+Player 5 landed on St. Charles Place
+++++++++++++++++++++
+Starting round 21
+Player 0 starting on Tennessee Avenue
+Player 0 rolls 3+1
+Visited: 22 now: 3
+Player 0 landed on Chance
+ -> Chance - Pay poor tax of $15
+Player 1 starting on Community Chest
+Player 1 rolls 5+6
+Visited: 13 now: 5
+Player 1 landed on States Avenue
+Player 2 starting on Pennsylvania Avenue
+Player 2 rolls 2+3
+Visited: 39 now: 7
+Player 2 landed on Boardwalk
+Player 3 starting on Pennsylvania Avenue
+Player 3 rolls 3+3
+Visited: 0 now: 3
+Player 3 landed on Go
+Player 3 rolls 3+1
+Visited: 4 now: 3
+Player 3 landed on Income Tax
+Player 4 starting on Mediterranean Avenue
+Player 4 rolls 5+6
+Visited: 12 now: 5
+Player 4 landed on Electric Company
+Player 5 starting on St. Charles Place
+Player 5 rolls 2+5
+Visited: 18 now: 9
+Player 5 landed on Tennessee Avenue
+++++++++++++++++++++
+Starting round 22
+Player 0 starting on Chance
+Player 0 rolls 5+3
+Player 0 landed on go to jail.
+Player 1 starting on States Avenue
+Player 1 rolls 2+6
+Visited: 21 now: 5
+Player 1 landed on Kentucky Avenue
+Player 2 starting on Boardwalk
+Player 2 rolls 2+4
+Visited: 5 now: 4
+Player 2 landed on Reading Railroad
+Player 3 starting on Income Tax
+Player 3 rolls 3+1
+Visited: 8 now: 6
+Player 3 landed on Vermont Avenue
+Player 4 starting on Electric Company
+Player 4 rolls 5+5
+Visited: 22 now: 4
+Player 4 landed on Chance
+ -> Chance - Take a ride on the Reading Railroad
+Player 4 rolls 5+2
+Visited: 12 now: 6
+Player 4 landed on Electric Company
+Player 5 starting on Tennessee Avenue
+Player 5 rolls 6+2
+Visited: 26 now: 6
+Player 5 landed on Alantic Avenue
+++++++++++++++++++++
+Starting round 23
+Player 0 starting on In Jail/Just Visiting
+Player 0 rolls 6+2
+ - still in jail
+Player 1 starting on Kentucky Avenue
+Player 1 rolls 3+3
+Visited: 27 now: 8
+Player 1 landed on Ventnor Avenue
+Player 1 rolls 1+3
+Visited: 31 now: 6
+Player 1 landed on Pacific Avenue
+Player 2 starting on Reading Railroad
+Player 2 rolls 2+4
+Visited: 11 now: 4
+Player 2 landed on St. Charles Place
+Player 3 starting on Vermont Avenue
+Player 3 rolls 4+1
+Visited: 13 now: 6
+Player 3 landed on States Avenue
+Player 4 starting on Electric Company
+Player 4 rolls 5+3
+Visited: 20 now: 5
+Player 4 landed on Free Parking
+Player 5 starting on Alantic Avenue
+Player 5 rolls 4+6
+Visited: 36 now: 5
+Player 5 landed on Chance
+ -> Chance - Advance token to Boardwalk
+++++++++++++++++++++
+Starting round 24
+Player 0 starting on In Jail/Just Visiting
+Player 0 rolls 3+4
+ - still in jail
+Player 1 starting on Pacific Avenue
+Player 1 rolls 3+6
+Visited: 0 now: 4
+Player 1 landed on Go
+Player 2 starting on St. Charles Place
+Player 2 rolls 1+2
+Visited: 14 now: 4
+Player 2 landed on Virginia Avenue
+Player 3 starting on States Avenue
+Player 3 rolls 3+6
+Visited: 22 now: 5
+Player 3 landed on Chance
+ -> Chance - You have been elected Charirman of the Board
+Player 4 starting on Free Parking
+Player 4 rolls 5+3
+Visited: 28 now: 5
+Player 4 landed on Water Works
+Player 5 starting on Boardwalk
+Player 5 rolls 4+3
+Visited: 6 now: 3
+Player 5 landed on Oriental Avenue
+++++++++++++++++++++
+Starting round 25
+Player 0 starting on In Jail/Just Visiting
+Player 0 rolls 3+4
+ - still in jail
+Player 1 starting on Go
+Player 1 rolls 6+3
+Visited: 9 now: 7
+Player 1 landed on Connecticut Avenue
+Player 2 starting on Virginia Avenue
+Player 2 rolls 3+6
+Visited: 23 now: 3
+Player 2 landed on Indiana Avenue
+Player 3 starting on Chance
+Player 3 rolls 1+4
+Visited: 27 now: 9
+Player 3 landed on Ventnor Avenue
+Player 4 starting on Water Works
+Player 4 rolls 1+6
+Visited: 35 now: 4
+Player 4 landed on Short Line
+Player 5 starting on Oriental Avenue
+Player 5 rolls 5+5
+Visited: 16 now: 4
+Player 5 landed on St. James Place
+Player 5 rolls 1+2
+Visited: 19 now: 5
+Player 5 landed on New York Avenue
+++++++++++++++++++++
+Starting round 26
+Player 0 starting on In Jail/Just Visiting
+Player 0 rolls 6+5
+ - Third roll from jail, releasing.
+Visited: 21 now: 6
+Player 0 landed on Kentucky Avenue
+Player 1 starting on Connecticut Avenue
+Player 1 rolls 1+1
+Visited: 11 now: 5
+Player 1 landed on St. Charles Place
+Player 1 rolls 5+4
+Visited: 20 now: 6
+Player 1 landed on Free Parking
+Player 2 starting on Indiana Avenue
+Player 2 rolls 4+2
+Visited: 29 now: 5
+Player 2 landed on Marvin Gardens
+Player 3 starting on Ventnor Avenue
+Player 3 rolls 5+6
+Visited: 38 now: 5
+Player 3 landed on Luxury Tax
+Player 4 starting on Short Line
+Player 4 rolls 5+5
+Visited: 5 now: 6
+Player 4 landed on Reading Railroad
+Player 4 rolls 5+5
+Visited: 15 now: 4
+Player 4 landed on Pennsylvania Railroad
+Player 4 rolls 2+2
+Player 4 rolled 3 doubles, go to jail.
+Player 5 starting on New York Avenue
+Player 5 rolls 4+5
+Visited: 28 now: 6
+Player 5 landed on Water Works
+++++++++++++++++++++
+Starting round 27
+Player 0 starting on Kentucky Avenue
+Player 0 rolls 5+6
+Visited: 32 now: 2
+Player 0 landed on North Carolina AVenue
+Player 1 starting on Free Parking
+Player 1 rolls 2+2
+Visited: 24 now: 6
+Player 1 landed on Illinois Avenue
+Player 1 rolls 6+2
+Visited: 32 now: 3
+Player 1 landed on North Carolina AVenue
+Player 2 starting on Marvin Gardens
+Player 2 rolls 1+6
+Visited: 36 now: 6
+Player 2 landed on Chance
+ -> Chance - Your building and loan matures
+Player 3 starting on Luxury Tax
+Player 3 rolls 2+6
+Visited: 6 now: 4
+Player 3 landed on Oriental Avenue
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 1+3
+ - Third roll from jail, releasing.
+Visited: 14 now: 5
+Player 4 landed on Virginia Avenue
+Player 5 starting on Water Works
+Player 5 rolls 5+2
+Visited: 35 now: 5
+Player 5 landed on Short Line
+++++++++++++++++++++
+Starting round 28
+Player 0 starting on North Carolina AVenue
+Player 0 rolls 5+5
+Visited: 2 now: 5
+Player 0 landed on Community Chest
+ -> Community Chest - You inherit $100
+Player 0 rolls 4+6
+Visited: 12 now: 7
+Player 0 landed on Electric Company
+Player 1 starting on North Carolina AVenue
+Player 1 rolls 2+6
+Visited: 0 now: 5
+Player 1 landed on Go
+Player 2 starting on Chance
+Player 2 rolls 1+3
+Visited: 0 now: 6
+Player 2 landed on Go
+Player 3 starting on Oriental Avenue
+Player 3 rolls 2+3
+Visited: 11 now: 6
+Player 3 landed on St. Charles Place
+Player 4 starting on Virginia Avenue
+Player 4 rolls 1+5
+Visited: 20 now: 7
+Player 4 landed on Free Parking
+Player 5 starting on Short Line
+Player 5 rolls 4+4
+Visited: 3 now: 10
+Player 5 landed on Baltic Avenue
+Player 5 rolls 4+6
+Visited: 13 now: 7
+Player 5 landed on States Avenue
+++++++++++++++++++++
+Starting round 29
+Player 0 starting on Electric Company
+Player 0 rolls 3+1
+Visited: 16 now: 5
+Player 0 landed on St. James Place
+Player 1 starting on Go
+Player 1 rolls 6+6
+Visited: 12 now: 8
+Player 1 landed on Electric Company
+Player 1 rolls 3+1
+Visited: 16 now: 6
+Player 1 landed on St. James Place
+Player 2 starting on Go
+Player 2 rolls 3+4
+Visited: 7 now: 5
+Player 2 landed on Chance
+ -> Chance - You have won a crossword competition
+Player 3 starting on St. Charles Place
+Player 3 rolls 5+3
+Visited: 19 now: 6
+Player 3 landed on New York Avenue
+Player 4 starting on Free Parking
+Player 4 rolls 4+1
+Visited: 25 now: 4
+Player 4 landed on B. & O. Railroad
+Player 5 starting on States Avenue
+Player 5 rolls 3+4
+Visited: 20 now: 8
+Player 5 landed on Free Parking
+++++++++++++++++++++
+Starting round 30
+Player 0 starting on St. James Place
+Player 0 rolls 3+4
+Visited: 23 now: 4
+Player 0 landed on Indiana Avenue
+Player 1 starting on St. James Place
+Player 1 rolls 1+4
+Visited: 21 now: 7
+Player 1 landed on Kentucky Avenue
+Player 2 starting on Chance
+Player 2 rolls 1+3
+Visited: 11 now: 7
+Player 2 landed on St. Charles Place
+Player 3 starting on New York Avenue
+Player 3 rolls 4+6
+Visited: 29 now: 6
+Player 3 landed on Marvin Gardens
+Player 4 starting on B. & O. Railroad
+Player 4 rolls 4+2
+Visited: 31 now: 7
+Player 4 landed on Pacific Avenue
+Player 5 starting on Free Parking
+Player 5 rolls 5+2
+Visited: 27 now: 10
+Player 5 landed on Ventnor Avenue
+++++++++++++++++++++
+Starting round 31
+Player 0 starting on Indiana Avenue
+Player 0 rolls 1+1
+Visited: 25 now: 5
+Player 0 landed on B. & O. Railroad
+Player 0 rolls 5+1
+Visited: 31 now: 8
+Player 0 landed on Pacific Avenue
+Player 1 starting on Kentucky Avenue
+Player 1 rolls 2+2
+Visited: 25 now: 6
+Player 1 landed on B. & O. Railroad
+Player 1 rolls 5+5
+Visited: 35 now: 6
+Player 1 landed on Short Line
+Player 1 rolls 2+1
+Visited: 38 now: 6
+Player 1 landed on Luxury Tax
+Player 2 starting on St. Charles Place
+Player 2 rolls 2+5
+Visited: 18 now: 10
+Player 2 landed on Tennessee Avenue
+Player 3 starting on Marvin Gardens
+Player 3 rolls 4+2
+Visited: 35 now: 7
+Player 3 landed on Short Line
+Player 4 starting on Pacific Avenue
+Player 4 rolls 2+5
+Visited: 38 now: 7
+Player 4 landed on Luxury Tax
+Player 5 starting on Ventnor Avenue
+Player 5 rolls 6+6
+Visited: 39 now: 9
+Player 5 landed on Boardwalk
+Player 5 rolls 4+5
+Visited: 8 now: 7
+Player 5 landed on Vermont Avenue
+++++++++++++++++++++
+Starting round 32
+Player 0 starting on Pacific Avenue
+Player 0 rolls 5+4
+Visited: 0 now: 7
+Player 0 landed on Go
+Player 1 starting on Luxury Tax
+Player 1 rolls 2+2
+Visited: 2 now: 6
+Player 1 landed on Community Chest
+ -> Community Chest - Advance to Go
+Player 1 rolls 5+6
+Visited: 11 now: 8
+Player 1 landed on St. Charles Place
+Player 2 starting on Tennessee Avenue
+Player 2 rolls 4+4
+Visited: 26 now: 7
+Player 2 landed on Alantic Avenue
+Player 2 rolls 6+2
+Visited: 34 now: 8
+Player 2 landed on Pennsylvania Avenue
+Player 3 starting on Short Line
+Player 3 rolls 6+5
+Visited: 6 now: 5
+Player 3 landed on Oriental Avenue
+Player 4 starting on Luxury Tax
+Player 4 rolls 3+1
+Visited: 2 now: 7
+Player 4 landed on Community Chest
+ -> Community Chest - Bank error in your favor
+Player 5 starting on Vermont Avenue
+Player 5 rolls 1+4
+Visited: 13 now: 8
+Player 5 landed on States Avenue
+++++++++++++++++++++
+Starting round 33
+Player 0 starting on Go
+Player 0 rolls 1+5
+Visited: 6 now: 6
+Player 0 landed on Oriental Avenue
+Player 1 starting on St. Charles Place
+Player 1 rolls 6+4
+Visited: 21 now: 8
+Player 1 landed on Kentucky Avenue
+Player 2 starting on Pennsylvania Avenue
+Player 2 rolls 5+4
+Visited: 3 now: 11
+Player 2 landed on Baltic Avenue
+Player 3 starting on Oriental Avenue
+Player 3 rolls 1+6
+Visited: 13 now: 9
+Player 3 landed on States Avenue
+Player 4 starting on Community Chest
+Player 4 rolls 5+6
+Visited: 13 now: 10
+Player 4 landed on States Avenue
+Player 5 starting on States Avenue
+Player 5 rolls 6+6
+Visited: 25 now: 7
+Player 5 landed on B. & O. Railroad
+Player 5 rolls 2+2
+Visited: 29 now: 7
+Player 5 landed on Marvin Gardens
+Player 5 rolls 1+3
+Visited: 33 now: 7
+Player 5 landed on Community Chest
+ -> Community Chest - Doctor's fees
+++++++++++++++++++++
+Starting round 34
+Player 0 starting on Oriental Avenue
+Player 0 rolls 4+6
+Visited: 16 now: 7
+Player 0 landed on St. James Place
+Player 1 starting on Kentucky Avenue
+Player 1 rolls 6+6
+Visited: 33 now: 8
+Player 1 landed on Community Chest
+ -> Community Chest - From sale of stock you get $50
+Player 1 rolls 6+5
+Visited: 4 now: 4
+Player 1 landed on Income Tax
+Player 2 starting on Baltic Avenue
+Player 2 rolls 3+2
+Visited: 8 now: 8
+Player 2 landed on Vermont Avenue
+Player 3 starting on States Avenue
+Player 3 rolls 5+1
+Visited: 19 now: 7
+Player 3 landed on New York Avenue
+Player 4 starting on States Avenue
+Player 4 rolls 4+3
+Visited: 20 now: 9
+Player 4 landed on Free Parking
+Player 5 starting on Community Chest
+Player 5 rolls 5+1
+Visited: 39 now: 10
+Player 5 landed on Boardwalk
+++++++++++++++++++++
+Starting round 35
+Player 0 starting on St. James Place
+Player 0 rolls 6+5
+Visited: 27 now: 11
+Player 0 landed on Ventnor Avenue
+Player 1 starting on Income Tax
+Player 1 rolls 6+1
+Visited: 11 now: 9
+Player 1 landed on St. Charles Place
+Player 2 starting on Vermont Avenue
+Player 2 rolls 3+3
+Visited: 14 now: 6
+Player 2 landed on Virginia Avenue
+Player 2 rolls 6+4
+Visited: 24 now: 7
+Player 2 landed on Illinois Avenue
+Player 3 starting on New York Avenue
+Player 3 rolls 4+1
+Visited: 24 now: 8
+Player 3 landed on Illinois Avenue
+Player 4 starting on Free Parking
+Player 4 rolls 6+5
+Visited: 31 now: 9
+Player 4 landed on Pacific Avenue
+Player 5 starting on Boardwalk
+Player 5 rolls 6+3
+Visited: 8 now: 9
+Player 5 landed on Vermont Avenue
+++++++++++++++++++++
+Starting round 36
+Player 0 starting on Ventnor Avenue
+Player 0 rolls 4+3
+Visited: 34 now: 9
+Player 0 landed on Pennsylvania Avenue
+Player 1 starting on St. Charles Place
+Player 1 rolls 4+6
+Visited: 21 now: 9
+Player 1 landed on Kentucky Avenue
+Player 2 starting on Illinois Avenue
+Player 2 rolls 4+1
+Visited: 29 now: 8
+Player 2 landed on Marvin Gardens
+Player 3 starting on Illinois Avenue
+Player 3 rolls 4+5
+Visited: 33 now: 9
+Player 3 landed on Community Chest
+ -> Community Chest - Go to Jail
+Player 4 starting on Pacific Avenue
+Player 4 rolls 4+2
+Visited: 37 now: 2
+Player 4 landed on Park Place
+Player 5 starting on Vermont Avenue
+Player 5 rolls 2+3
+Visited: 13 now: 11
+Player 5 landed on States Avenue
+++++++++++++++++++++
+Starting round 37
+Player 0 starting on Pennsylvania Avenue
+Player 0 rolls 1+3
+Visited: 38 now: 8
+Player 0 landed on Luxury Tax
+Player 1 starting on Kentucky Avenue
+Player 1 rolls 1+3
+Visited: 25 now: 8
+Player 1 landed on B. & O. Railroad
+Player 2 starting on Marvin Gardens
+Player 2 rolls 2+4
+Visited: 35 now: 8
+Player 2 landed on Short Line
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 3+2
+ - still in jail
+Player 4 starting on Park Place
+Player 4 rolls 5+4
+Visited: 6 now: 7
+Player 4 landed on Oriental Avenue
+Player 5 starting on States Avenue
+Player 5 rolls 5+6
+Visited: 24 now: 9
+Player 5 landed on Illinois Avenue
+++++++++++++++++++++
+Starting round 38
+Player 0 starting on Luxury Tax
+Player 0 rolls 4+6
+Visited: 8 now: 10
+Player 0 landed on Vermont Avenue
+Player 1 starting on B. & O. Railroad
+Player 1 rolls 3+6
+Visited: 34 now: 10
+Player 1 landed on Pennsylvania Avenue
+Player 2 starting on Short Line
+Player 2 rolls 3+6
+Visited: 4 now: 5
+Player 2 landed on Income Tax
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 6+5
+ - still in jail
+Player 4 starting on Oriental Avenue
+Player 4 rolls 5+3
+Visited: 14 now: 7
+Player 4 landed on Virginia Avenue
+Player 5 starting on Illinois Avenue
+Player 5 rolls 2+2
+Visited: 28 now: 7
+Player 5 landed on Water Works
+Player 5 rolls 2+4
+Visited: 34 now: 11
+Player 5 landed on Pennsylvania Avenue
+++++++++++++++++++++
+Starting round 39
+Player 0 starting on Vermont Avenue
+Player 0 rolls 1+4
+Visited: 13 now: 12
+Player 0 landed on States Avenue
+Player 1 starting on Pennsylvania Avenue
+Player 1 rolls 3+3
+Visited: 0 now: 9
+Player 1 landed on Go
+Player 1 rolls 1+6
+Visited: 7 now: 6
+Player 1 landed on Chance
+ -> Chance - Advance to Go
+Player 2 starting on Income Tax
+Player 2 rolls 6+3
+Visited: 13 now: 13
+Player 2 landed on States Avenue
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 5+5
+ - doubles, releasing from jail.
+Visited: 20 now: 10
+Player 3 landed on Free Parking
+Player 3 rolls 6+1
+Visited: 27 now: 12
+Player 3 landed on Ventnor Avenue
+Player 4 starting on Virginia Avenue
+Player 4 rolls 2+3
+Visited: 19 now: 8
+Player 4 landed on New York Avenue
+Player 5 starting on Pennsylvania Avenue
+Player 5 rolls 4+3
+Visited: 1 now: 3
+Player 5 landed on Mediterranean Avenue
+++++++++++++++++++++
+Starting round 40
+Player 0 starting on States Avenue
+Player 0 rolls 4+4
+Visited: 21 now: 10
+Player 0 landed on Kentucky Avenue
+Player 0 rolls 4+3
+Visited: 28 now: 8
+Player 0 landed on Water Works
+Player 1 starting on Go
+Player 1 rolls 4+1
+Visited: 5 now: 7
+Player 1 landed on Reading Railroad
+Player 2 starting on States Avenue
+Player 2 rolls 2+3
+Visited: 18 now: 11
+Player 2 landed on Tennessee Avenue
+Player 3 starting on Ventnor Avenue
+Player 3 rolls 1+2
+Player 3 landed on go to jail.
+Player 4 starting on New York Avenue
+Player 4 rolls 6+5
+Player 4 landed on go to jail.
+Player 5 starting on Mediterranean Avenue
+Player 5 rolls 5+3
+Visited: 9 now: 8
+Player 5 landed on Connecticut Avenue
+++++++++++++++++++++
+Starting round 41
+Player 0 starting on Water Works
+Player 0 rolls 2+5
+Visited: 35 now: 9
+Player 0 landed on Short Line
+Player 1 starting on Reading Railroad
+Player 1 rolls 4+4
+Visited: 13 now: 14
+Player 1 landed on States Avenue
+Player 1 rolls 6+3
+Visited: 22 now: 6
+Player 1 landed on Chance
+ -> Chance - Advance to Illinois Ave.
+Player 2 starting on Tennessee Avenue
+Player 2 rolls 1+2
+Visited: 21 now: 11
+Player 2 landed on Kentucky Avenue
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 6+3
+ - still in jail
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 6+3
+ - Third roll from jail, releasing.
+Visited: 19 now: 9
+Player 4 landed on New York Avenue
+Player 5 starting on Connecticut Avenue
+Player 5 rolls 3+2
+Visited: 14 now: 8
+Player 5 landed on Virginia Avenue
+++++++++++++++++++++
+Starting round 42
+Player 0 starting on Short Line
+Player 0 rolls 6+3
+Visited: 4 now: 6
+Player 0 landed on Income Tax
+Player 1 starting on Illinois Avenue
+Player 1 rolls 4+3
+Visited: 31 now: 10
+Player 1 landed on Pacific Avenue
+Player 2 starting on Kentucky Avenue
+Player 2 rolls 2+3
+Visited: 26 now: 8
+Player 2 landed on Alantic Avenue
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 3+6
+ - Third roll from jail, releasing.
+Visited: 19 now: 10
+Player 3 landed on New York Avenue
+Player 4 starting on New York Avenue
+Player 4 rolls 2+4
+Visited: 25 now: 9
+Player 4 landed on B. & O. Railroad
+Player 5 starting on Virginia Avenue
+Player 5 rolls 1+1
+Visited: 16 now: 8
+Player 5 landed on St. James Place
+Player 5 rolls 6+3
+Visited: 25 now: 10
+Player 5 landed on B. & O. Railroad
+++++++++++++++++++++
+Starting round 43
+Player 0 starting on Income Tax
+Player 0 rolls 6+4
+Visited: 14 now: 9
+Player 0 landed on Virginia Avenue
+Player 1 starting on Pacific Avenue
+Player 1 rolls 1+5
+Visited: 37 now: 3
+Player 1 landed on Park Place
+Player 2 starting on Alantic Avenue
+Player 2 rolls 1+6
+Visited: 33 now: 10
+Player 2 landed on Community Chest
+ -> Community Chest - Grand Opera opening
+Player 3 starting on New York Avenue
+Player 3 rolls 5+6
+Player 3 landed on go to jail.
+Player 4 starting on B. & O. Railroad
+Player 4 rolls 4+6
+Visited: 35 now: 10
+Player 4 landed on Short Line
+Player 5 starting on B. & O. Railroad
+Player 5 rolls 2+1
+Visited: 28 now: 9
+Player 5 landed on Water Works
+++++++++++++++++++++
+Starting round 44
+Player 0 starting on Virginia Avenue
+Player 0 rolls 5+6
+Visited: 25 now: 11
+Player 0 landed on B. & O. Railroad
+Player 1 starting on Park Place
+Player 1 rolls 6+3
+Visited: 6 now: 8
+Player 1 landed on Oriental Avenue
+Player 2 starting on Community Chest
+Player 2 rolls 5+1
+Visited: 39 now: 11
+Player 2 landed on Boardwalk
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 4+2
+ - Third roll from jail, releasing.
+Visited: 16 now: 9
+Player 3 landed on St. James Place
+Player 4 starting on Short Line
+Player 4 rolls 4+3
+Visited: 2 now: 8
+Player 4 landed on Community Chest
+ -> Community Chest - Xmas fund matures
+Player 5 starting on Water Works
+Player 5 rolls 3+2
+Visited: 33 now: 11
+Player 5 landed on Community Chest
+ -> Community Chest - Income tax refund
+++++++++++++++++++++
+Starting round 45
+Player 0 starting on B. & O. Railroad
+Player 0 rolls 3+2
+Player 0 landed on go to jail.
+Player 1 starting on Oriental Avenue
+Player 1 rolls 2+6
+Visited: 14 now: 10
+Player 1 landed on Virginia Avenue
+Player 2 starting on Boardwalk
+Player 2 rolls 2+6
+Visited: 7 now: 7
+Player 2 landed on Chance
+ -> Chance - Advance to St. Charles Place
+Player 3 starting on St. James Place
+Player 3 rolls 5+2
+Visited: 23 now: 5
+Player 3 landed on Indiana Avenue
+Player 4 starting on Community Chest
+Player 4 rolls 1+5
+Visited: 8 now: 11
+Player 4 landed on Vermont Avenue
+Player 5 starting on Community Chest
+Player 5 rolls 6+5
+Visited: 4 now: 7
+Player 5 landed on Income Tax
+++++++++++++++++++++
+Starting round 46
+Player 0 starting on In Jail/Just Visiting
+Player 0 rolls 1+5
+ - Third roll from jail, releasing.
+Visited: 16 now: 10
+Player 0 landed on St. James Place
+Player 1 starting on Virginia Avenue
+Player 1 rolls 6+4
+Visited: 24 now: 11
+Player 1 landed on Illinois Avenue
+Player 2 starting on St. Charles Place
+Player 2 rolls 6+3
+Visited: 20 now: 11
+Player 2 landed on Free Parking
+Player 3 starting on Indiana Avenue
+Player 3 rolls 1+6
+Player 3 landed on go to jail.
+Player 4 starting on Vermont Avenue
+Player 4 rolls 2+2
+Visited: 12 now: 9
+Player 4 landed on Electric Company
+Player 4 rolls 3+1
+Visited: 16 now: 11
+Player 4 landed on St. James Place
+Player 5 starting on Income Tax
+Player 5 rolls 5+6
+Visited: 15 now: 5
+Player 5 landed on Pennsylvania Railroad
+++++++++++++++++++++
+Starting round 47
+Player 0 starting on St. James Place
+Player 0 rolls 2+5
+Visited: 23 now: 6
+Player 0 landed on Indiana Avenue
+Player 1 starting on Illinois Avenue
+Player 1 rolls 5+6
+Visited: 35 now: 11
+Player 1 landed on Short Line
+Player 2 starting on Free Parking
+Player 2 rolls 2+6
+Visited: 28 now: 10
+Player 2 landed on Water Works
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 6+3
+ - Third roll from jail, releasing.
+Visited: 19 now: 11
+Player 3 landed on New York Avenue
+Player 4 starting on St. James Place
+Player 4 rolls 2+6
+Visited: 24 now: 12
+Player 4 landed on Illinois Avenue
+Player 5 starting on Pennsylvania Railroad
+Player 5 rolls 1+6
+Visited: 22 now: 7
+Player 5 landed on Chance
+ -> Chance - Advance token to nearest Utility
+++++++++++++++++++++
+Starting round 48
+Player 0 starting on Indiana Avenue
+Player 0 rolls 6+3
+Visited: 32 now: 4
+Player 0 landed on North Carolina AVenue
+Player 1 starting on Short Line
+Player 1 rolls 6+1
+Visited: 2 now: 9
+Player 1 landed on Community Chest
+ -> Community Chest - It is your birthday
+Player 2 starting on Water Works
+Player 2 rolls 5+6
+Visited: 39 now: 12
+Player 2 landed on Boardwalk
+Player 3 starting on New York Avenue
+Player 3 rolls 4+5
+Visited: 28 now: 12
+Player 3 landed on Water Works
+Player 4 starting on Illinois Avenue
+Player 4 rolls 2+4
+Player 4 landed on go to jail.
+Player 5 starting on Water Works
+Player 5 rolls 4+3
+Visited: 35 now: 12
+Player 5 landed on Short Line
+++++++++++++++++++++
+Starting round 49
+Player 0 starting on North Carolina AVenue
+Player 0 rolls 3+6
+Visited: 1 now: 4
+Player 0 landed on Mediterranean Avenue
+Player 1 starting on Community Chest
+Player 1 rolls 4+1
+Visited: 7 now: 8
+Player 1 landed on Chance
+ -> Chance - Advance to nearest Railroad
+Player 2 starting on Boardwalk
+Player 2 rolls 4+3
+Visited: 6 now: 9
+Player 2 landed on Oriental Avenue
+Player 3 starting on Water Works
+Player 3 rolls 1+3
+Visited: 32 now: 5
+Player 3 landed on North Carolina AVenue
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 3+3
+ - Third roll from jail, releasing.
+Visited: 16 now: 12
+Player 4 landed on St. James Place
+Player 4 rolls 6+3
+Visited: 25 now: 12
+Player 4 landed on B. & O. Railroad
+Player 5 starting on Short Line
+Player 5 rolls 1+5
+Visited: 1 now: 5
+Player 5 landed on Mediterranean Avenue
+++++++++++++++++++++
+Starting round 50
+Player 0 starting on Mediterranean Avenue
+Player 0 rolls 6+3
+Visited: 10 now: 20
+Player 0 landed on In Jail/Just Visiting
+Player 1 starting on Pennsylvania Railroad
+Player 1 rolls 6+3
+Visited: 24 now: 13
+Player 1 landed on Illinois Avenue
+Player 2 starting on Oriental Avenue
+Player 2 rolls 4+6
+Visited: 16 now: 13
+Player 2 landed on St. James Place
+Player 3 starting on North Carolina AVenue
+Player 3 rolls 3+1
+Visited: 36 now: 7
+Player 3 landed on Chance
+ -> Chance - Bank pays you divident of $50
+Player 4 starting on B. & O. Railroad
+Player 4 rolls 2+3
+Player 4 landed on go to jail.
+Player 5 starting on Mediterranean Avenue
+Player 5 rolls 5+5
+Visited: 11 now: 11
+Player 5 landed on St. Charles Place
+Player 5 rolls 4+2
+Visited: 17 now: 7
+Player 5 landed on Community Chest
+ -> Community Chest - Life insurance matures
+++++++++++++++++++++
+Starting round 51
+Player 0 starting on In Jail/Just Visiting
+Player 0 rolls 5+2
+Visited: 17 now: 8
+Player 0 landed on Community Chest
+ -> Community Chest - Pay hospital fees of $100
+Player 1 starting on Illinois Avenue
+Player 1 rolls 3+1
+Visited: 28 now: 13
+Player 1 landed on Water Works
+Player 2 starting on St. James Place
+Player 2 rolls 2+1
+Visited: 19 now: 12
+Player 2 landed on New York Avenue
+Player 3 starting on Chance
+Player 3 rolls 4+2
+Visited: 2 now: 10
+Player 3 landed on Community Chest
+ -> Community Chest - Pay school fees of $150
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 3+1
+ - Third roll from jail, releasing.
+Visited: 14 now: 11
+Player 4 landed on Virginia Avenue
+Player 5 starting on Community Chest
+Player 5 rolls 1+5
+Visited: 23 now: 7
+Player 5 landed on Indiana Avenue
+++++++++++++++++++++
+Starting round 52
+Player 0 starting on Community Chest
+Player 0 rolls 6+6
+Visited: 29 now: 9
+Player 0 landed on Marvin Gardens
+Player 0 rolls 6+2
+Visited: 37 now: 4
+Player 0 landed on Park Place
+Player 1 starting on Water Works
+Player 1 rolls 1+1
+Player 1 landed on go to jail.
+Player 1 rolls 2+6
+ - still in jail
+Player 2 starting on New York Avenue
+Player 2 rolls 2+3
+Visited: 24 now: 14
+Player 2 landed on Illinois Avenue
+Player 3 starting on Community Chest
+Player 3 rolls 4+2
+Visited: 8 now: 12
+Player 3 landed on Vermont Avenue
+Player 4 starting on Virginia Avenue
+Player 4 rolls 5+6
+Visited: 25 now: 13
+Player 4 landed on B. & O. Railroad
+Player 5 starting on Indiana Avenue
+Player 5 rolls 4+6
+Visited: 33 now: 12
+Player 5 landed on Community Chest
+ -> Community Chest - Receive for Services $25
+++++++++++++++++++++
+Starting round 53
+Player 0 starting on Park Place
+Player 0 rolls 3+6
+Visited: 6 now: 10
+Player 0 landed on Oriental Avenue
+Player 1 starting on In Jail/Just Visiting
+Player 1 rolls 2+1
+ - still in jail
+Player 2 starting on Illinois Avenue
+Player 2 rolls 2+3
+Visited: 29 now: 10
+Player 2 landed on Marvin Gardens
+Player 3 starting on Vermont Avenue
+Player 3 rolls 2+5
+Visited: 15 now: 7
+Player 3 landed on Pennsylvania Railroad
+Player 4 starting on B. & O. Railroad
+Player 4 rolls 1+3
+Visited: 29 now: 11
+Player 4 landed on Marvin Gardens
+Player 5 starting on Community Chest
+Player 5 rolls 3+1
+Visited: 37 now: 5
+Player 5 landed on Park Place
+++++++++++++++++++++
+Starting round 54
+Player 0 starting on Oriental Avenue
+Player 0 rolls 5+1
+Visited: 12 now: 10
+Player 0 landed on Electric Company
+Player 1 starting on In Jail/Just Visiting
+Player 1 rolls 4+2
+ - still in jail
+Player 2 starting on Marvin Gardens
+Player 2 rolls 2+5
+Visited: 36 now: 8
+Player 2 landed on Chance
+ -> Chance - Get Out of Jail Free
+Player 3 starting on Pennsylvania Railroad
+Player 3 rolls 3+2
+Visited: 20 now: 12
+Player 3 landed on Free Parking
+Player 4 starting on Marvin Gardens
+Player 4 rolls 6+1
+Visited: 36 now: 9
+Player 4 landed on Chance
+ -> Chance - Go back 3 spaces
+ -> Community Chest - Get Out of Jail Free
+Player 5 starting on Park Place
+Player 5 rolls 3+6
+Visited: 6 now: 11
+Player 5 landed on Oriental Avenue
+++++++++++++++++++++
+Starting round 55
+Player 0 starting on Electric Company
+Player 0 rolls 3+6
+Visited: 21 now: 12
+Player 0 landed on Kentucky Avenue
+Player 1 starting on In Jail/Just Visiting
+Player 1 rolls 6+5
+ - Third roll from jail, releasing.
+Visited: 21 now: 13
+Player 1 landed on Kentucky Avenue
+Player 2 starting on Chance
+Player 2 rolls 6+2
+Visited: 4 now: 8
+Player 2 landed on Income Tax
+Player 3 starting on Free Parking
+Player 3 rolls 4+4
+Visited: 28 now: 14
+Player 3 landed on Water Works
+Player 3 rolls 3+2
+Visited: 33 now: 14
+Player 3 landed on Community Chest
+ -> Community Chest - You are assessed for street repairs
+Player 4 starting on Community Chest
+Player 4 rolls 2+5
+Visited: 0 now: 11
+Player 4 landed on Go
+Player 5 starting on Oriental Avenue
+Player 5 rolls 2+2
+Visited: 10 now: 23
+Player 5 landed on In Jail/Just Visiting
+Player 5 rolls 2+5
+Visited: 17 now: 9
+Player 5 landed on Community Chest
+ -> Community Chest - You have won second prize in a beauty contest
+++++++++++++++++++++
+Starting round 56
+Player 0 starting on Kentucky Avenue
+Player 0 rolls 5+6
+Visited: 32 now: 6
+Player 0 landed on North Carolina AVenue
+Player 1 starting on Kentucky Avenue
+Player 1 rolls 4+5
+Player 1 landed on go to jail.
+Player 2 starting on Income Tax
+Player 2 rolls 1+4
+Visited: 9 now: 9
+Player 2 landed on Connecticut Avenue
+Player 3 starting on Community Chest
+Player 3 rolls 1+3
+Visited: 37 now: 6
+Player 3 landed on Park Place
+Player 4 starting on Go
+Player 4 rolls 6+5
+Visited: 11 now: 12
+Player 4 landed on St. Charles Place
+Player 5 starting on Community Chest
+Player 5 rolls 4+3
+Visited: 24 now: 15
+Player 5 landed on Illinois Avenue
+++++++++++++++++++++
+Starting round 57
+Player 0 starting on North Carolina AVenue
+Player 0 rolls 1+5
+Visited: 38 now: 9
+Player 0 landed on Luxury Tax
+Player 1 starting on In Jail/Just Visiting
+Player 1 rolls 4+1
+ - Third roll from jail, releasing.
+Visited: 15 now: 8
+Player 1 landed on Pennsylvania Railroad
+Player 2 starting on Connecticut Avenue
+Player 2 rolls 1+4
+Visited: 14 now: 12
+Player 2 landed on Virginia Avenue
+Player 3 starting on Park Place
+Player 3 rolls 6+6
+Visited: 9 now: 10
+Player 3 landed on Connecticut Avenue
+Player 3 rolls 6+6
+Visited: 21 now: 14
+Player 3 landed on Kentucky Avenue
+Player 3 rolls 1+6
+Visited: 28 now: 15
+Player 3 landed on Water Works
+Player 4 starting on St. Charles Place
+Player 4 rolls 6+3
+Visited: 20 now: 13
+Player 4 landed on Free Parking
+Player 5 starting on Illinois Avenue
+Player 5 rolls 5+1
+Player 5 landed on go to jail.
+++++++++++++++++++++
+Starting round 58
+Player 0 starting on Luxury Tax
+Player 0 rolls 4+4
+Visited: 6 now: 12
+Player 0 landed on Oriental Avenue
+Player 0 rolls 5+5
+Visited: 16 now: 14
+Player 0 landed on St. James Place
+Player 0 rolls 3+4
+Visited: 23 now: 8
+Player 0 landed on Indiana Avenue
+Player 1 starting on Pennsylvania Railroad
+Player 1 rolls 2+5
+Visited: 22 now: 8
+Player 1 landed on Chance
+ -> Chance - Go to Jail
+Player 2 starting on Virginia Avenue
+Player 2 rolls 3+4
+Visited: 21 now: 15
+Player 2 landed on Kentucky Avenue
+Player 3 starting on Water Works
+Player 3 rolls 3+2
+Visited: 33 now: 15
+Player 3 landed on Community Chest
+ -> Community Chest - You inherit $100
+Player 4 starting on Free Parking
+Player 4 rolls 5+4
+Visited: 29 now: 12
+Player 4 landed on Marvin Gardens
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 4+2
+ - Third roll from jail, releasing.
+Visited: 16 now: 15
+Player 5 landed on St. James Place
+++++++++++++++++++++
+Starting round 59
+Player 0 starting on Indiana Avenue
+Player 0 rolls 5+3
+Visited: 31 now: 11
+Player 0 landed on Pacific Avenue
+Player 1 starting on In Jail/Just Visiting
+Player 1 rolls 5+2
+ - Third roll from jail, releasing.
+Visited: 17 now: 10
+Player 1 landed on Community Chest
+ -> Community Chest - Advance to Go
+Player 2 starting on Kentucky Avenue
+Player 2 rolls 4+2
+Visited: 27 now: 13
+Player 2 landed on Ventnor Avenue
+Player 3 starting on Community Chest
+Player 3 rolls 5+4
+Visited: 2 now: 11
+Player 3 landed on Community Chest
+ -> Community Chest - Bank error in your favor
+Player 4 starting on Marvin Gardens
+Player 4 rolls 1+2
+Visited: 32 now: 7
+Player 4 landed on North Carolina AVenue
+Player 5 starting on St. James Place
+Player 5 rolls 3+5
+Visited: 24 now: 16
+Player 5 landed on Illinois Avenue
+++++++++++++++++++++
+Starting round 60
+Player 0 starting on Pacific Avenue
+Player 0 rolls 2+3
+Visited: 36 now: 10
+Player 0 landed on Chance
+ -> Chance - Make general repairs on all your property
+Player 1 starting on Go
+Player 1 rolls 2+4
+Visited: 6 now: 13
+Player 1 landed on Oriental Avenue
+Player 2 starting on Ventnor Avenue
+Player 2 rolls 3+1
+Visited: 31 now: 12
+Player 2 landed on Pacific Avenue
+Player 3 starting on Community Chest
+Player 3 rolls 5+3
+Visited: 10 now: 27
+Player 3 landed on In Jail/Just Visiting
+Player 4 starting on North Carolina AVenue
+Player 4 rolls 6+1
+Visited: 39 now: 13
+Player 4 landed on Boardwalk
+Player 5 starting on Illinois Avenue
+Player 5 rolls 4+2
+Player 5 landed on go to jail.
+++++++++++++++++++++
+Starting round 61
+Player 0 starting on Chance
+Player 0 rolls 4+1
+Visited: 1 now: 6
+Player 0 landed on Mediterranean Avenue
+Player 1 starting on Oriental Avenue
+Player 1 rolls 2+4
+Visited: 12 now: 11
+Player 1 landed on Electric Company
+Player 2 starting on Pacific Avenue
+Player 2 rolls 5+5
+Visited: 1 now: 7
+Player 2 landed on Mediterranean Avenue
+Player 2 rolls 1+4
+Visited: 6 now: 14
+Player 2 landed on Oriental Avenue
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 2+1
+Visited: 13 now: 15
+Player 3 landed on States Avenue
+Player 4 starting on Boardwalk
+Player 4 rolls 5+3
+Visited: 7 now: 9
+Player 4 landed on Chance
+ -> Chance - Pay poor tax of $15
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 6+3
+ - Third roll from jail, releasing.
+Visited: 19 now: 13
+Player 5 landed on New York Avenue
+++++++++++++++++++++
+Starting round 62
+Player 0 starting on Mediterranean Avenue
+Player 0 rolls 1+1
+Visited: 3 now: 12
+Player 0 landed on Baltic Avenue
+Player 0 rolls 6+2
+Visited: 11 now: 13
+Player 0 landed on St. Charles Place
+Player 1 starting on Electric Company
+Player 1 rolls 5+5
+Visited: 22 now: 9
+Player 1 landed on Chance
+ -> Chance - Take a ride on the Reading Railroad
+Player 1 rolls 4+4
+Visited: 13 now: 16
+Player 1 landed on States Avenue
+Player 1 rolls 4+6
+Visited: 23 now: 9
+Player 1 landed on Indiana Avenue
+Player 2 starting on Oriental Avenue
+Player 2 rolls 4+5
+Visited: 15 now: 9
+Player 2 landed on Pennsylvania Railroad
+Player 3 starting on States Avenue
+Player 3 rolls 3+1
+Visited: 17 now: 11
+Player 3 landed on Community Chest
+ -> Community Chest - Doctor's fees
+Player 4 starting on Chance
+Player 4 rolls 5+6
+Visited: 18 now: 12
+Player 4 landed on Tennessee Avenue
+Player 5 starting on New York Avenue
+Player 5 rolls 3+2
+Visited: 24 now: 17
+Player 5 landed on Illinois Avenue
+++++++++++++++++++++
+Starting round 63
+Player 0 starting on St. Charles Place
+Player 0 rolls 1+5
+Visited: 17 now: 12
+Player 0 landed on Community Chest
+ -> Community Chest - From sale of stock you get $50
+Player 1 starting on Indiana Avenue
+Player 1 rolls 5+4
+Visited: 32 now: 8
+Player 1 landed on North Carolina AVenue
+Player 2 starting on Pennsylvania Railroad
+Player 2 rolls 3+6
+Visited: 24 now: 18
+Player 2 landed on Illinois Avenue
+Player 3 starting on Community Chest
+Player 3 rolls 5+4
+Visited: 26 now: 9
+Player 3 landed on Alantic Avenue
+Player 4 starting on Tennessee Avenue
+Player 4 rolls 5+5
+Visited: 28 now: 16
+Player 4 landed on Water Works
+Player 4 rolls 6+4
+Visited: 38 now: 10
+Player 4 landed on Luxury Tax
+Player 5 starting on Illinois Avenue
+Player 5 rolls 4+5
+Visited: 33 now: 16
+Player 5 landed on Community Chest
+ -> Community Chest - Go to Jail
+++++++++++++++++++++
+Starting round 64
+Player 0 starting on Community Chest
+Player 0 rolls 5+3
+Visited: 25 now: 14
+Player 0 landed on B. & O. Railroad
+Player 1 starting on North Carolina AVenue
+Player 1 rolls 1+3
+Visited: 36 now: 11
+Player 1 landed on Chance
+ -> Chance - Advance token to Boardwalk
+Player 2 starting on Illinois Avenue
+Player 2 rolls 5+6
+Visited: 35 now: 13
+Player 2 landed on Short Line
+Player 3 starting on Alantic Avenue
+Player 3 rolls 5+6
+Visited: 37 now: 7
+Player 3 landed on Park Place
+Player 4 starting on Luxury Tax
+Player 4 rolls 1+2
+Visited: 1 now: 8
+Player 4 landed on Mediterranean Avenue
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 4+2
+ - Third roll from jail, releasing.
+Visited: 16 now: 16
+Player 5 landed on St. James Place
+++++++++++++++++++++
+Starting round 65
+Player 0 starting on B. & O. Railroad
+Player 0 rolls 2+3
+Player 0 landed on go to jail.
+Player 1 starting on Boardwalk
+Player 1 rolls 1+6
+Visited: 6 now: 15
+Player 1 landed on Oriental Avenue
+Player 2 starting on Short Line
+Player 2 rolls 3+6
+Visited: 4 now: 9
+Player 2 landed on Income Tax
+Player 3 starting on Park Place
+Player 3 rolls 1+2
+Visited: 0 now: 13
+Player 3 landed on Go
+Player 4 starting on Mediterranean Avenue
+Player 4 rolls 2+4
+Visited: 7 now: 10
+Player 4 landed on Chance
+ -> Chance - You have been elected Charirman of the Board
+Player 5 starting on St. James Place
+Player 5 rolls 3+2
+Visited: 21 now: 16
+Player 5 landed on Kentucky Avenue
+++++++++++++++++++++
+Starting round 66
+Player 0 starting on In Jail/Just Visiting
+Player 0 rolls 3+6
+ - Third roll from jail, releasing.
+Visited: 19 now: 14
+Player 0 landed on New York Avenue
+Player 1 starting on Oriental Avenue
+Player 1 rolls 5+1
+Visited: 12 now: 12
+Player 1 landed on Electric Company
+Player 2 starting on Income Tax
+Player 2 rolls 6+6
+Visited: 16 now: 17
+Player 2 landed on St. James Place
+Player 2 rolls 6+6
+Visited: 28 now: 17
+Player 2 landed on Water Works
+Player 2 rolls 6+5
+Visited: 39 now: 15
+Player 2 landed on Boardwalk
+Player 3 starting on Go
+Player 3 rolls 1+1
+Visited: 2 now: 12
+Player 3 landed on Community Chest
+ -> Community Chest - Grand Opera opening
+Player 3 rolls 3+5
+Visited: 10 now: 31
+Player 3 landed on In Jail/Just Visiting
+Player 4 starting on Chance
+Player 4 rolls 3+3
+Visited: 13 now: 17
+Player 4 landed on States Avenue
+Player 4 rolls 6+3
+Visited: 22 now: 10
+Player 4 landed on Chance
+ -> Chance - Your building and loan matures
+Player 5 starting on Kentucky Avenue
+Player 5 rolls 4+3
+Visited: 28 now: 18
+Player 5 landed on Water Works
+++++++++++++++++++++
+Starting round 67
+Player 0 starting on New York Avenue
+Player 0 rolls 6+6
+Visited: 31 now: 13
+Player 0 landed on Pacific Avenue
+Player 0 rolls 2+5
+Visited: 38 now: 11
+Player 0 landed on Luxury Tax
+Player 1 starting on Electric Company
+Player 1 rolls 1+4
+Visited: 17 now: 13
+Player 1 landed on Community Chest
+ -> Community Chest - Xmas fund matures
+Player 2 starting on Boardwalk
+Player 2 rolls 2+3
+Visited: 4 now: 10
+Player 2 landed on Income Tax
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 5+5
+Visited: 20 now: 14
+Player 3 landed on Free Parking
+Player 3 rolls 2+1
+Visited: 23 now: 10
+Player 3 landed on Indiana Avenue
+Player 4 starting on Chance
+Player 4 rolls 1+5
+Visited: 28 now: 19
+Player 4 landed on Water Works
+Player 5 starting on Water Works
+Player 5 rolls 1+1
+Player 5 landed on go to jail.
+Player 5 rolls 5+4
+ - Third roll from jail, releasing.
+Visited: 19 now: 15
+Player 5 landed on New York Avenue
+++++++++++++++++++++
+Starting round 68
+Player 0 starting on Luxury Tax
+Player 0 rolls 6+4
+Visited: 8 now: 13
+Player 0 landed on Vermont Avenue
+Player 1 starting on Community Chest
+Player 1 rolls 4+3
+Visited: 24 now: 19
+Player 1 landed on Illinois Avenue
+Player 2 starting on Income Tax
+Player 2 rolls 1+5
+Visited: 10 now: 33
+Player 2 landed on In Jail/Just Visiting
+Player 3 starting on Indiana Avenue
+Player 3 rolls 1+6
+Player 3 landed on go to jail.
+Player 4 starting on Water Works
+Player 4 rolls 5+2
+Visited: 35 now: 14
+Player 4 landed on Short Line
+Player 5 starting on New York Avenue
+Player 5 rolls 1+2
+Visited: 22 now: 11
+Player 5 landed on Chance
+ -> Chance - You have won a crossword competition
+++++++++++++++++++++
+Starting round 69
+Player 0 starting on Vermont Avenue
+Player 0 rolls 6+2
+Visited: 16 now: 18
+Player 0 landed on St. James Place
+Player 1 starting on Illinois Avenue
+Player 1 rolls 1+6
+Visited: 31 now: 14
+Player 1 landed on Pacific Avenue
+Player 2 starting on In Jail/Just Visiting
+Player 2 rolls 1+4
+Visited: 15 now: 10
+Player 2 landed on Pennsylvania Railroad
+Player 3 starting on In Jail/Just Visiting
+Player 3 rolls 1+5
+ - Third roll from jail, releasing.
+Visited: 16 now: 19
+Player 3 landed on St. James Place
+Player 4 starting on Short Line
+Player 4 rolls 4+6
+Visited: 5 now: 9
+Player 4 landed on Reading Railroad
+Player 5 starting on Chance
+Player 5 rolls 3+5
+Player 5 landed on go to jail.
+++++++++++++++++++++
+Starting round 70
+Player 0 starting on St. James Place
+Player 0 rolls 3+4
+Visited: 23 now: 11
+Player 0 landed on Indiana Avenue
+Player 1 starting on Pacific Avenue
+Player 1 rolls 2+1
+Visited: 34 now: 12
+Player 1 landed on Pennsylvania Avenue
+Player 2 starting on Pennsylvania Railroad
+Player 2 rolls 6+3
+Visited: 24 now: 20
+Player 2 landed on Illinois Avenue
+Player 3 starting on St. James Place
+Player 3 rolls 1+3
+Visited: 20 now: 15
+Player 3 landed on Free Parking
+Player 4 starting on Reading Railroad
+Player 4 rolls 4+5
+Visited: 14 now: 13
+Player 4 landed on Virginia Avenue
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 6+4
+ - Third roll from jail, releasing.
+Visited: 20 now: 16
+Player 5 landed on Free Parking
+++++++++++++++++++++
+Starting round 71
+Player 0 starting on Indiana Avenue
+Player 0 rolls 2+4
+Visited: 29 now: 13
+Player 0 landed on Marvin Gardens
+Player 1 starting on Pennsylvania Avenue
+Player 1 rolls 3+3
+Visited: 0 now: 14
+Player 1 landed on Go
+Player 1 rolls 5+3
+Visited: 8 now: 14
+Player 1 landed on Vermont Avenue
+Player 2 starting on Illinois Avenue
+Player 2 rolls 1+2
+Visited: 27 now: 14
+Player 2 landed on Ventnor Avenue
+Player 3 starting on Free Parking
+Player 3 rolls 3+5
+Visited: 28 now: 20
+Player 3 landed on Water Works
+Player 4 starting on Virginia Avenue
+Player 4 rolls 6+1
+Visited: 21 now: 17
+Player 4 landed on Kentucky Avenue
+Player 5 starting on Free Parking
+Player 5 rolls 5+4
+Visited: 29 now: 14
+Player 5 landed on Marvin Gardens
+++++++++++++++++++++
+Starting round 72
+Player 0 starting on Marvin Gardens
+Player 0 rolls 1+5
+Visited: 35 now: 15
+Player 0 landed on Short Line
+Player 1 starting on Vermont Avenue
+Player 1 rolls 1+3
+Visited: 12 now: 13
+Player 1 landed on Electric Company
+Player 2 starting on Ventnor Avenue
+Player 2 rolls 2+3
+Visited: 32 now: 9
+Player 2 landed on North Carolina AVenue
+Player 3 starting on Water Works
+Player 3 rolls 2+5
+Visited: 35 now: 16
+Player 3 landed on Short Line
+Player 4 starting on Kentucky Avenue
+Player 4 rolls 2+5
+Visited: 28 now: 21
+Player 4 landed on Water Works
+Player 5 starting on Marvin Gardens
+Player 5 rolls 3+6
+Visited: 38 now: 12
+Player 5 landed on Luxury Tax
+++++++++++++++++++++
+Starting round 73
+Player 0 starting on Short Line
+Player 0 rolls 2+3
+Visited: 0 now: 15
+Player 0 landed on Go
+Player 1 starting on Electric Company
+Player 1 rolls 3+6
+Visited: 21 now: 18
+Player 1 landed on Kentucky Avenue
+Player 2 starting on North Carolina AVenue
+Player 2 rolls 1+1
+Visited: 34 now: 13
+Player 2 landed on Pennsylvania Avenue
+Player 2 rolls 3+5
+Visited: 2 now: 13
+Player 2 landed on Community Chest
+ -> Community Chest - Income tax refund
+Player 3 starting on Short Line
+Player 3 rolls 1+5
+Visited: 1 now: 9
+Player 3 landed on Mediterranean Avenue
+Player 4 starting on Water Works
+Player 4 rolls 2+2
+Visited: 32 now: 10
+Player 4 landed on North Carolina AVenue
+Player 4 rolls 6+1
+Visited: 39 now: 16
+Player 4 landed on Boardwalk
+Player 5 starting on Luxury Tax
+Player 5 rolls 4+6
+Visited: 8 now: 15
+Player 5 landed on Vermont Avenue
+++++++++++++++++++++
+Starting round 74
+Player 0 starting on Go
+Player 0 rolls 4+4
+Visited: 8 now: 16
+Player 0 landed on Vermont Avenue
+Player 0 rolls 3+1
+Visited: 12 now: 14
+Player 0 landed on Electric Company
+Player 1 starting on Kentucky Avenue
+Player 1 rolls 1+4
+Visited: 26 now: 10
+Player 1 landed on Alantic Avenue
+Player 2 starting on Community Chest
+Player 2 rolls 5+5
+Visited: 12 now: 15
+Player 2 landed on Electric Company
+Player 2 rolls 2+1
+Visited: 15 now: 11
+Player 2 landed on Pennsylvania Railroad
+Player 3 starting on Mediterranean Avenue
+Player 3 rolls 2+2
+Visited: 5 now: 10
+Player 3 landed on Reading Railroad
+Player 3 rolls 6+6
+Visited: 17 now: 14
+Player 3 landed on Community Chest
+ -> Community Chest - It is your birthday
+Player 3 rolls 6+1
+Visited: 24 now: 21
+Player 3 landed on Illinois Avenue
+Player 4 starting on Boardwalk
+Player 4 rolls 5+1
+Visited: 5 now: 11
+Player 4 landed on Reading Railroad
+Player 5 starting on Vermont Avenue
+Player 5 rolls 5+4
+Visited: 17 now: 15
+Player 5 landed on Community Chest
+ -> Community Chest - Life insurance matures
+++++++++++++++++++++
+Starting round 75
+Player 0 starting on Electric Company
+Player 0 rolls 1+5
+Visited: 18 now: 13
+Player 0 landed on Tennessee Avenue
+Player 1 starting on Alantic Avenue
+Player 1 rolls 2+1
+Visited: 29 now: 15
+Player 1 landed on Marvin Gardens
+Player 2 starting on Pennsylvania Railroad
+Player 2 rolls 1+3
+Visited: 19 now: 16
+Player 2 landed on New York Avenue
+Player 3 starting on Illinois Avenue
+Player 3 rolls 6+1
+Visited: 31 now: 15
+Player 3 landed on Pacific Avenue
+Player 4 starting on Reading Railroad
+Player 4 rolls 5+1
+Visited: 11 now: 14
+Player 4 landed on St. Charles Place
+Player 5 starting on Community Chest
+Player 5 rolls 4+4
+Visited: 25 now: 15
+Player 5 landed on B. & O. Railroad
+Player 5 rolls 6+3
+Visited: 34 now: 14
+Player 5 landed on Pennsylvania Avenue
+++++++++++++++++++++
+Starting round 76
+Player 0 starting on Tennessee Avenue
+Player 0 rolls 6+6
+Player 0 landed on go to jail.
+Player 0 rolls 1+6
+ - Third roll from jail, releasing.
+Visited: 17 now: 16
+Player 0 landed on Community Chest
+ -> Community Chest - Pay hospital fees of $100
+Player 1 starting on Marvin Gardens
+Player 1 rolls 3+6
+Visited: 38 now: 13
+Player 1 landed on Luxury Tax
+Player 2 starting on New York Avenue
+Player 2 rolls 4+3
+Visited: 26 now: 11
+Player 2 landed on Alantic Avenue
+Player 3 starting on Pacific Avenue
+Player 3 rolls 4+2
+Visited: 37 now: 8
+Player 3 landed on Park Place
+Player 4 starting on St. Charles Place
+Player 4 rolls 1+3
+Visited: 15 now: 12
+Player 4 landed on Pennsylvania Railroad
+Player 5 starting on Pennsylvania Avenue
+Player 5 rolls 1+4
+Visited: 39 now: 17
+Player 5 landed on Boardwalk
+++++++++++++++++++++
+Starting round 77
+Player 0 starting on Community Chest
+Player 0 rolls 5+5
+Visited: 27 now: 15
+Player 0 landed on Ventnor Avenue
+Player 0 rolls 4+3
+Visited: 34 now: 15
+Player 0 landed on Pennsylvania Avenue
+Player 1 starting on Luxury Tax
+Player 1 rolls 2+1
+Visited: 1 now: 10
+Player 1 landed on Mediterranean Avenue
+Player 2 starting on Alantic Avenue
+Player 2 rolls 5+5
+Visited: 36 now: 12
+Player 2 landed on Chance
+ -> Chance - Advance to Go
+Player 2 rolls 5+1
+Visited: 6 now: 16
+Player 2 landed on Oriental Avenue
+Player 3 starting on Park Place
+Player 3 rolls 2+3
+Visited: 2 now: 14
+Player 3 landed on Community Chest
+ -> Community Chest - Pay school fees of $150
+Player 4 starting on Pennsylvania Railroad
+Player 4 rolls 4+6
+Visited: 25 now: 16
+Player 4 landed on B. & O. Railroad
+Player 5 starting on Boardwalk
+Player 5 rolls 6+1
+Visited: 6 now: 17
+Player 5 landed on Oriental Avenue
+++++++++++++++++++++
+Starting round 78
+Player 0 starting on Pennsylvania Avenue
+Player 0 rolls 2+3
+Visited: 39 now: 18
+Player 0 landed on Boardwalk
+Player 1 starting on Mediterranean Avenue
+Player 1 rolls 6+4
+Visited: 11 now: 15
+Player 1 landed on St. Charles Place
+Player 2 starting on Oriental Avenue
+Player 2 rolls 6+6
+Visited: 18 now: 14
+Player 2 landed on Tennessee Avenue
+Player 2 rolls 6+1
+Visited: 25 now: 17
+Player 2 landed on B. & O. Railroad
+Player 3 starting on Community Chest
+Player 3 rolls 4+2
+Visited: 8 now: 17
+Player 3 landed on Vermont Avenue
+Player 4 starting on B. & O. Railroad
+Player 4 rolls 2+2
+Visited: 29 now: 16
+Player 4 landed on Marvin Gardens
+Player 4 rolls 2+1
+Visited: 32 now: 11
+Player 4 landed on North Carolina AVenue
+Player 5 starting on Oriental Avenue
+Player 5 rolls 2+4
+Visited: 12 now: 16
+Player 5 landed on Electric Company
+++++++++++++++++++++
+Starting round 79
+Player 0 starting on Boardwalk
+Player 0 rolls 5+5
+Visited: 9 now: 11
+Player 0 landed on Connecticut Avenue
+Player 0 rolls 1+4
+Visited: 14 now: 14
+Player 0 landed on Virginia Avenue
+Player 1 starting on St. Charles Place
+Player 1 rolls 2+5
+Visited: 18 now: 15
+Player 1 landed on Tennessee Avenue
+Player 2 starting on B. & O. Railroad
+Player 2 rolls 6+3
+Visited: 34 now: 16
+Player 2 landed on Pennsylvania Avenue
+Player 3 starting on Vermont Avenue
+Player 3 rolls 2+4
+Visited: 14 now: 15
+Player 3 landed on Virginia Avenue
+Player 4 starting on North Carolina AVenue
+Player 4 rolls 6+3
+Visited: 1 now: 11
+Player 4 landed on Mediterranean Avenue
+Player 5 starting on Electric Company
+Player 5 rolls 5+2
+Visited: 19 now: 17
+Player 5 landed on New York Avenue
+++++++++++++++++++++
+Starting round 80
+Player 0 starting on Virginia Avenue
+Player 0 rolls 6+3
+Visited: 23 now: 12
+Player 0 landed on Indiana Avenue
+Player 1 starting on Tennessee Avenue
+Player 1 rolls 3+5
+Visited: 26 now: 12
+Player 1 landed on Alantic Avenue
+Player 2 starting on Pennsylvania Avenue
+Player 2 rolls 2+5
+Visited: 1 now: 12
+Player 2 landed on Mediterranean Avenue
+Player 3 starting on Virginia Avenue
+Player 3 rolls 3+2
+Visited: 19 now: 18
+Player 3 landed on New York Avenue
+Player 4 starting on Mediterranean Avenue
+Player 4 rolls 2+2
+Visited: 5 now: 12
+Player 4 landed on Reading Railroad
+Player 4 rolls 6+5
+Visited: 16 now: 20
+Player 4 landed on St. James Place
+Player 5 starting on New York Avenue
+Player 5 rolls 6+4
+Visited: 29 now: 17
+Player 5 landed on Marvin Gardens
+++++++++++++++++++++
+Starting round 81
+Player 0 starting on Indiana Avenue
+Player 0 rolls 5+1
+Visited: 29 now: 18
+Player 0 landed on Marvin Gardens
+Player 1 starting on Alantic Avenue
+Player 1 rolls 2+4
+Visited: 32 now: 12
+Player 1 landed on North Carolina AVenue
+Player 2 starting on Mediterranean Avenue
+Player 2 rolls 3+2
+Visited: 6 now: 18
+Player 2 landed on Oriental Avenue
+Player 3 starting on New York Avenue
+Player 3 rolls 5+4
+Visited: 28 now: 22
+Player 3 landed on Water Works
+Player 4 starting on St. James Place
+Player 4 rolls 5+3
+Visited: 24 now: 22
+Player 4 landed on Illinois Avenue
+Player 5 starting on Marvin Gardens
+Player 5 rolls 2+6
+Visited: 37 now: 9
+Player 5 landed on Park Place
+++++++++++++++++++++
+Starting round 82
+Player 0 starting on Marvin Gardens
+Player 0 rolls 5+1
+Visited: 35 now: 17
+Player 0 landed on Short Line
+Player 1 starting on North Carolina AVenue
+Player 1 rolls 1+5
+Visited: 38 now: 14
+Player 1 landed on Luxury Tax
+Player 2 starting on Oriental Avenue
+Player 2 rolls 2+6
+Visited: 14 now: 16
+Player 2 landed on Virginia Avenue
+Player 3 starting on Water Works
+Player 3 rolls 2+2
+Visited: 32 now: 13
+Player 3 landed on North Carolina AVenue
+Player 3 rolls 5+1
+Visited: 38 now: 15
+Player 3 landed on Luxury Tax
+Player 4 starting on Illinois Avenue
+Player 4 rolls 6+2
+Visited: 32 now: 14
+Player 4 landed on North Carolina AVenue
+Player 5 starting on Park Place
+Player 5 rolls 5+2
+Visited: 4 now: 11
+Player 5 landed on Income Tax
+++++++++++++++++++++
+Starting round 83
+Player 0 starting on Short Line
+Player 0 rolls 2+1
+Visited: 38 now: 16
+Player 0 landed on Luxury Tax
+Player 1 starting on Luxury Tax
+Player 1 rolls 5+3
+Visited: 6 now: 19
+Player 1 landed on Oriental Avenue
+Player 2 starting on Virginia Avenue
+Player 2 rolls 4+4
+Visited: 22 now: 12
+Player 2 landed on Chance
+ -> Chance - Advance to Illinois Ave.
+Player 2 rolls 5+4
+Visited: 33 now: 17
+Player 2 landed on Community Chest
+ -> Community Chest - Receive for Services $25
+Player 3 starting on Luxury Tax
+Player 3 rolls 2+1
+Visited: 1 now: 13
+Player 3 landed on Mediterranean Avenue
+Player 4 starting on North Carolina AVenue
+Player 4 rolls 5+4
+Visited: 1 now: 14
+Player 4 landed on Mediterranean Avenue
+Player 5 starting on Income Tax
+Player 5 rolls 5+4
+Visited: 13 now: 18
+Player 5 landed on States Avenue
+++++++++++++++++++++
+Starting round 84
+Player 0 starting on Luxury Tax
+Player 0 rolls 1+1
+Visited: 0 now: 17
+Player 0 landed on Go
+Player 0 rolls 4+2
+Visited: 6 now: 20
+Player 0 landed on Oriental Avenue
+Player 1 starting on Oriental Avenue
+Player 1 rolls 1+3
+Visited: 10 now: 37
+Player 1 landed on In Jail/Just Visiting
+Player 2 starting on Community Chest
+Player 2 rolls 3+5
+Visited: 1 now: 15
+Player 2 landed on Mediterranean Avenue
+Player 3 starting on Mediterranean Avenue
+Player 3 rolls 6+6
+Visited: 13 now: 19
+Player 3 landed on States Avenue
+Player 3 rolls 2+4
+Visited: 19 now: 19
+Player 3 landed on New York Avenue
+Player 4 starting on Mediterranean Avenue
+Player 4 rolls 5+2
+Visited: 8 now: 18
+Player 4 landed on Vermont Avenue
+Player 5 starting on States Avenue
+Player 5 rolls 5+5
+Visited: 23 now: 13
+Player 5 landed on Indiana Avenue
+Player 5 rolls 3+1
+Visited: 27 now: 16
+Player 5 landed on Ventnor Avenue
+++++++++++++++++++++
+Starting round 85
+Player 0 starting on Oriental Avenue
+Player 0 rolls 4+4
+Visited: 14 now: 17
+Player 0 landed on Virginia Avenue
+Player 0 rolls 3+6
+Visited: 23 now: 14
+Player 0 landed on Indiana Avenue
+Player 1 starting on In Jail/Just Visiting
+Player 1 rolls 2+2
+Visited: 14 now: 18
+Player 1 landed on Virginia Avenue
+Player 1 rolls 2+4
+Visited: 20 now: 17
+Player 1 landed on Free Parking
+Player 2 starting on Mediterranean Avenue
+Player 2 rolls 1+3
+Visited: 5 now: 13
+Player 2 landed on Reading Railroad
+Player 3 starting on New York Avenue
+Player 3 rolls 1+1
+Visited: 21 now: 19
+Player 3 landed on Kentucky Avenue
+Player 3 rolls 5+1
+Visited: 27 now: 17
+Player 3 landed on Ventnor Avenue
+Player 4 starting on Vermont Avenue
+Player 4 rolls 3+2
+Visited: 13 now: 20
+Player 4 landed on States Avenue
+Player 5 starting on Ventnor Avenue
+Player 5 rolls 1+2
+Player 5 landed on go to jail.
+++++++++++++++++++++
+Starting round 86
+Player 0 starting on Indiana Avenue
+Player 0 rolls 3+5
+Visited: 31 now: 16
+Player 0 landed on Pacific Avenue
+Player 1 starting on Free Parking
+Player 1 rolls 4+5
+Visited: 29 now: 19
+Player 1 landed on Marvin Gardens
+Player 2 starting on Reading Railroad
+Player 2 rolls 2+5
+Visited: 12 now: 17
+Player 2 landed on Electric Company
+Player 3 starting on Ventnor Avenue
+Player 3 rolls 1+1
+Visited: 29 now: 20
+Player 3 landed on Marvin Gardens
+Player 3 rolls 6+1
+Visited: 36 now: 13
+Player 3 landed on Chance
+ -> Chance - Advance to St. Charles Place
+Player 4 starting on States Avenue
+Player 4 rolls 5+3
+Visited: 21 now: 20
+Player 4 landed on Kentucky Avenue
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 1+4
+ - Third roll from jail, releasing.
+Visited: 15 now: 13
+Player 5 landed on Pennsylvania Railroad
+++++++++++++++++++++
+Starting round 87
+Player 0 starting on Pacific Avenue
+Player 0 rolls 1+3
+Visited: 35 now: 18
+Player 0 landed on Short Line
+Player 1 starting on Marvin Gardens
+Player 1 rolls 2+2
+Visited: 33 now: 18
+Player 1 landed on Community Chest
+ -> Community Chest - You are assessed for street repairs
+Player 1 rolls 4+5
+Visited: 2 now: 15
+Player 1 landed on Community Chest
+ -> Community Chest - You have won second prize in a beauty contest
+Player 2 starting on Electric Company
+Player 2 rolls 4+3
+Visited: 19 now: 20
+Player 2 landed on New York Avenue
+Player 3 starting on St. Charles Place
+Player 3 rolls 3+5
+Visited: 19 now: 21
+Player 3 landed on New York Avenue
+Player 4 starting on Kentucky Avenue
+Player 4 rolls 4+5
+Player 4 landed on go to jail.
+Player 5 starting on Pennsylvania Railroad
+Player 5 rolls 1+1
+Visited: 17 now: 17
+Player 5 landed on Community Chest
+ -> Community Chest - You inherit $100
+Player 5 rolls 5+1
+Visited: 23 now: 15
+Player 5 landed on Indiana Avenue
+++++++++++++++++++++
+Starting round 88
+Player 0 starting on Short Line
+Player 0 rolls 2+3
+Visited: 0 now: 18
+Player 0 landed on Go
+Player 1 starting on Community Chest
+Player 1 rolls 5+2
+Visited: 9 now: 12
+Player 1 landed on Connecticut Avenue
+Player 2 starting on New York Avenue
+Player 2 rolls 1+3
+Visited: 23 now: 16
+Player 2 landed on Indiana Avenue
+Player 3 starting on New York Avenue
+Player 3 rolls 6+4
+Visited: 29 now: 21
+Player 3 landed on Marvin Gardens
+Player 4 starting on In Jail/Just Visiting
+Player 4 used a get out of jail free card
+Player 4 rolls 6+6
+Visited: 22 now: 13
+Player 4 landed on Chance
+ -> Chance - Advance token to nearest Utility
+Player 4 rolls 2+3
+Visited: 33 now: 19
+Player 4 landed on Community Chest
+ -> Community Chest - Advance to Go
+Player 5 starting on Indiana Avenue
+Player 5 rolls 2+5
+Player 5 landed on go to jail.
+++++++++++++++++++++
+Starting round 89
+Player 0 starting on Go
+Player 0 rolls 6+5
+Visited: 11 now: 17
+Player 0 landed on St. Charles Place
+Player 1 starting on Connecticut Avenue
+Player 1 rolls 6+4
+Visited: 19 now: 22
+Player 1 landed on New York Avenue
+Player 2 starting on Indiana Avenue
+Player 2 rolls 2+6
+Visited: 31 now: 17
+Player 2 landed on Pacific Avenue
+Player 3 starting on Marvin Gardens
+Player 3 rolls 4+3
+Visited: 36 now: 14
+Player 3 landed on Chance
+ -> Chance - Advance to nearest Railroad
+Player 4 starting on Go
+Player 4 rolls 5+5
+Visited: 10 now: 41
+Player 4 landed on In Jail/Just Visiting
+Player 4 rolls 6+4
+Visited: 20 now: 18
+Player 4 landed on Free Parking
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 3+6
+ - Third roll from jail, releasing.
+Visited: 19 now: 23
+Player 5 landed on New York Avenue
+++++++++++++++++++++
+Starting round 90
+Player 0 starting on St. Charles Place
+Player 0 rolls 4+2
+Visited: 17 now: 18
+Player 0 landed on Community Chest
+ -> Community Chest - Bank error in your favor
+Player 1 starting on New York Avenue
+Player 1 rolls 4+4
+Visited: 27 now: 18
+Player 1 landed on Ventnor Avenue
+Player 1 rolls 2+6
+Visited: 35 now: 19
+Player 1 landed on Short Line
+Player 2 starting on Pacific Avenue
+Player 2 rolls 2+1
+Visited: 34 now: 17
+Player 2 landed on Pennsylvania Avenue
+Player 3 starting on Chance
+Player 3 rolls 6+5
+Visited: 7 now: 11
+Player 3 landed on Chance
+ -> Chance - Bank pays you divident of $50
+Player 4 starting on Free Parking
+Player 4 rolls 3+3
+Visited: 26 now: 13
+Player 4 landed on Alantic Avenue
+Player 4 rolls 6+2
+Visited: 34 now: 18
+Player 4 landed on Pennsylvania Avenue
+Player 5 starting on New York Avenue
+Player 5 rolls 1+3
+Visited: 23 now: 17
+Player 5 landed on Indiana Avenue
+++++++++++++++++++++
+Starting round 91
+Player 0 starting on Community Chest
+Player 0 rolls 2+3
+Visited: 22 now: 14
+Player 0 landed on Chance
+ -> Chance - Go back 3 spaces
+Player 1 starting on Short Line
+Player 1 rolls 1+3
+Visited: 39 now: 19
+Player 1 landed on Boardwalk
+Player 2 starting on Pennsylvania Avenue
+Player 2 rolls 2+4
+Visited: 0 now: 20
+Player 2 landed on Go
+Player 3 starting on Chance
+Player 3 rolls 6+4
+Visited: 17 now: 19
+Player 3 landed on Community Chest
+ -> Community Chest - Doctor's fees
+Player 4 starting on Pennsylvania Avenue
+Player 4 rolls 6+1
+Visited: 1 now: 16
+Player 4 landed on Mediterranean Avenue
+Player 5 starting on Indiana Avenue
+Player 5 rolls 5+2
+Player 5 landed on go to jail.
+++++++++++++++++++++
+Starting round 92
+Player 0 starting on New York Avenue
+Player 0 rolls 1+1
+Visited: 21 now: 21
+Player 0 landed on Kentucky Avenue
+Player 0 rolls 3+1
+Visited: 25 now: 18
+Player 0 landed on B. & O. Railroad
+Player 1 starting on Boardwalk
+Player 1 rolls 2+3
+Visited: 4 now: 12
+Player 1 landed on Income Tax
+Player 2 starting on Go
+Player 2 rolls 4+2
+Visited: 6 now: 21
+Player 2 landed on Oriental Avenue
+Player 3 starting on Community Chest
+Player 3 rolls 1+6
+Visited: 24 now: 24
+Player 3 landed on Illinois Avenue
+Player 4 starting on Mediterranean Avenue
+Player 4 rolls 6+4
+Visited: 11 now: 18
+Player 4 landed on St. Charles Place
+Player 5 starting on In Jail/Just Visiting
+Player 5 rolls 4+6
+ - Third roll from jail, releasing.
+Visited: 20 now: 19
+Player 5 landed on Free Parking
+++++++++++++++++++++
+Starting round 93
+Player 0 starting on B. & O. Railroad
+Player 0 rolls 3+3
+Visited: 31 now: 18
+Player 0 landed on Pacific Avenue
+Player 0 rolls 5+3
+Visited: 39 now: 20
+Player 0 landed on Boardwalk
+Player 1 starting on Income Tax
+Player 1 rolls 6+5
+Visited: 15 now: 14
+Player 1 landed on Pennsylvania Railroad
+Player 2 starting on Oriental Avenue
+Player 2 rolls 6+6
+Visited: 18 now: 16
+Player 2 landed on Tennessee Avenue
+Player 2 rolls 1+4
+Visited: 23 now: 18
+Player 2 landed on Indiana Avenue
+Player 3 starting on Illinois Avenue
+Player 3 rolls 5+6
+Visited: 35 now: 20
+Player 3 landed on Short Line
+Player 4 starting on St. Charles Place
+Player 4 rolls 1+3
+Visited: 15 now: 15
+Player 4 landed on Pennsylvania Railroad
+Player 5 starting on Free Parking
+Player 5 rolls 1+2
+Visited: 23 now: 19
+Player 5 landed on Indiana Avenue
+++++++++++++++++++++
+Starting round 94
+Player 0 starting on Boardwalk
+Player 0 rolls 6+2
+Visited: 7 now: 12
+Player 0 landed on Chance
+ -> Chance - Go to Jail
+Player 1 starting on Pennsylvania Railroad
+Player 1 rolls 4+1
+Visited: 20 now: 20
+Player 1 landed on Free Parking
+Player 2 starting on Indiana Avenue
+Player 2 rolls 3+6
+Visited: 32 now: 15
+Player 2 landed on North Carolina AVenue
+Player 3 starting on Short Line
+Player 3 rolls 2+1
+Visited: 38 now: 17
+Player 3 landed on Luxury Tax
+Player 4 starting on Pennsylvania Railroad
+Player 4 rolls 5+2
+Visited: 22 now: 15
+Player 4 landed on Chance
+ -> Chance - Make general repairs on all your property
+Player 5 starting on Indiana Avenue
+Player 5 rolls 2+6
+Visited: 31 now: 19
+Player 5 landed on Pacific Avenue
+++++++++++++++++++++
+Starting round 95
+Player 0 starting on In Jail/Just Visiting
+Player 0 rolls 6+5
+ - Third roll from jail, releasing.
+Visited: 21 now: 22
+Player 0 landed on Kentucky Avenue
+Player 1 starting on Free Parking
+Player 1 rolls 4+6
+Player 1 landed on go to jail.
+Player 2 starting on North Carolina AVenue
+Player 2 rolls 4+2
+Visited: 38 now: 18
+Player 2 landed on Luxury Tax
+Player 3 starting on Luxury Tax
+Player 3 rolls 6+3
+Visited: 7 now: 13
+Player 3 landed on Chance
+ -> Chance - Pay poor tax of $15
+Player 4 starting on Chance
+Player 4 rolls 3+5
+Player 4 landed on go to jail.
+Player 5 starting on Pacific Avenue
+Player 5 rolls 1+3
+Visited: 35 now: 21
+Player 5 landed on Short Line
+++++++++++++++++++++
+Starting round 96
+Player 0 starting on Kentucky Avenue
+Player 0 rolls 2+2
+Visited: 25 now: 19
+Player 0 landed on B. & O. Railroad
+Player 0 rolls 4+5
+Visited: 34 now: 19
+Player 0 landed on Pennsylvania Avenue
+Player 1 starting on In Jail/Just Visiting
+Player 1 rolls 1+5
+ - Third roll from jail, releasing.
+Visited: 16 now: 21
+Player 1 landed on St. James Place
+Player 2 starting on Luxury Tax
+Player 2 rolls 5+3
+Visited: 6 now: 22
+Player 2 landed on Oriental Avenue
+Player 3 starting on Chance
+Player 3 rolls 6+5
+Visited: 18 now: 17
+Player 3 landed on Tennessee Avenue
+Player 4 starting on In Jail/Just Visiting
+Player 4 rolls 1+5
+ - Third roll from jail, releasing.
+Visited: 16 now: 22
+Player 4 landed on St. James Place
+Player 5 starting on Short Line
+Player 5 rolls 3+5
+Visited: 3 now: 13
+Player 5 landed on Baltic Avenue
+++++++++++++++++++++
+Starting round 97
+Player 0 starting on Pennsylvania Avenue
+Player 0 rolls 1+2
+Visited: 37 now: 10
+Player 0 landed on Park Place
+Player 1 starting on St. James Place
+Player 1 rolls 4+3
+Visited: 23 now: 20
+Player 1 landed on Indiana Avenue
+Player 2 starting on Oriental Avenue
+Player 2 rolls 4+6
+Visited: 16 now: 23
+Player 2 landed on St. James Place
+Player 3 starting on Tennessee Avenue
+Player 3 rolls 2+1
+Visited: 21 now: 23
+Player 3 landed on Kentucky Avenue
+Player 4 starting on St. James Place
+Player 4 rolls 3+4
+Visited: 23 now: 21
+Player 4 landed on Indiana Avenue
+Player 5 starting on Baltic Avenue
+Player 5 rolls 1+5
+Visited: 9 now: 13
+Player 5 landed on Connecticut Avenue
+++++++++++++++++++++
+Starting round 98
+Player 0 starting on Park Place
+Player 0 rolls 1+1
+Visited: 39 now: 21
+Player 0 landed on Boardwalk
+Player 0 rolls 3+5
+Visited: 7 now: 14
+Player 0 landed on Chance
+ -> Chance - Take a ride on the Reading Railroad
+Player 1 starting on Indiana Avenue
+Player 1 rolls 3+2
+Visited: 28 now: 24
+Player 1 landed on Water Works
+Player 2 starting on St. James Place
+Player 2 rolls 2+3
+Visited: 21 now: 24
+Player 2 landed on Kentucky Avenue
+Player 3 starting on Kentucky Avenue
+Player 3 rolls 2+4
+Visited: 27 now: 19
+Player 3 landed on Ventnor Avenue
+Player 4 starting on Indiana Avenue
+Player 4 rolls 2+6
+Visited: 31 now: 20
+Player 4 landed on Pacific Avenue
+Player 5 starting on Connecticut Avenue
+Player 5 rolls 1+6
+Visited: 16 now: 24
+Player 5 landed on St. James Place
+++++++++++++++++++++
+Starting round 99
+Player 0 starting on Reading Railroad
+Player 0 rolls 3+6
+Visited: 14 now: 19
+Player 0 landed on Virginia Avenue
+Player 1 starting on Water Works
+Player 1 rolls 1+3
+Visited: 32 now: 16
+Player 1 landed on North Carolina AVenue
+Player 2 starting on Kentucky Avenue
+Player 2 rolls 4+1
+Visited: 26 now: 14
+Player 2 landed on Alantic Avenue
+Player 3 starting on Ventnor Avenue
+Player 3 rolls 5+3
+Visited: 35 now: 22
+Player 3 landed on Short Line
+Player 4 starting on Pacific Avenue
+Player 4 rolls 5+6
+Visited: 2 now: 16
+Player 4 landed on Community Chest
+ -> Community Chest - From sale of stock you get $50
+Player 5 starting on St. James Place
+Player 5 rolls 6+2
+Visited: 24 now: 25
+Player 5 landed on Illinois Avenue
+++++++++++++++++++++
+Starting round 100
+Player 0 starting on Virginia Avenue
+Player 0 rolls 4+1
+Visited: 19 now: 25
+Player 0 landed on New York Avenue
+Player 1 starting on North Carolina AVenue
+Player 1 rolls 3+5
+Visited: 0 now: 21
+Player 1 landed on Go
+Player 2 starting on Alantic Avenue
+Player 2 rolls 4+3
+Visited: 33 now: 20
+Player 2 landed on Community Chest
+ -> Community Chest - Go to Jail
+Player 3 starting on Short Line
+Player 3 rolls 5+6
+Visited: 6 now: 23
+Player 3 landed on Oriental Avenue
+Player 4 starting on Community Chest
+Player 4 rolls 4+6
+Visited: 12 now: 18
+Player 4 landed on Electric Company
+Player 5 starting on Illinois Avenue
+Player 5 rolls 4+4
+Visited: 32 now: 17
+Player 5 landed on North Carolina AVenue
+Player 5 rolls 3+4
+Visited: 39 now: 22
+Player 5 landed on Boardwalk
+----------------
+Go :: 21
+Mediterranean Avenue :: 16
+Community Chest :: 16
+Baltic Avenue :: 13
+Income Tax :: 12
+Reading Railroad :: 14
+Oriental Avenue :: 23
+Chance :: 14
+Vermont Avenue :: 18
+Connecticut Avenue :: 13
+In Jail/Just Visiting :: 46
+St. Charles Place :: 18
+Electric Company :: 18
+States Avenue :: 20
+Virginia Avenue :: 19
+Pennsylvania Railroad :: 15
+St. James Place :: 24
+Community Chest :: 19
+Tennessee Avenue :: 17
+New York Avenue :: 25
+Free Parking :: 20
+Kentucky Avenue :: 24
+Chance :: 15
+Indiana Avenue :: 21
+Illinois Avenue :: 25
+B. & O. Railroad :: 19
+Alantic Avenue :: 14
+Ventnor Avenue :: 19
+Water Works :: 24
+Marvin Gardens :: 21
+Go To Jail :: 24
+Pacific Avenue :: 20
+North Carolina AVenue :: 17
+Community Chest :: 20
+Pennsylvania Avenue :: 19
+Short Line :: 22
+Chance :: 14
+Park Place :: 10
+Luxury Tax :: 18
+Boardwalk :: 22
+
+----------------
