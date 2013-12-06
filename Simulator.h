@@ -64,11 +64,15 @@ public:
 
 	}
 
-	/* Simulation class destructor */
+	//Simulation class destructor
 	~Simulator() {
 		//Close the output file handler
 		this->output_handle_ << "\n";
 		this->output_handle_.close();
+		//Delete Player objects allocated on the heap
+		for(unsigned int i = 0; i < this->players_.size(); i++) {
+			delete this->players_[i];
+		}
 	}
 
 	/* Accessor methods */
@@ -87,6 +91,7 @@ private:
 
 	/*** Private method implementation ***/
 
+	/* Simulation loop. Simulates player turns and outputs simulation results. */
 	void runSimulation() {
 		for(unsigned int r_index = 0; r_index < this->config_.turnCount(); r_index++) {
 			//For each round (turn set) of the simulation
@@ -105,8 +110,9 @@ private:
 		this->printPropertyStatistics();
 	}
 
-	//Private helper functions
+	//Helper methods
 
+	/* Constructs a filepath string based on the current simulation */
 	string getOutputPath() const {
 		//Set up a dynamic filepath describing the simulation
 		ostringstream output_path;
@@ -117,6 +123,7 @@ private:
 		return string("output/" + output_path.str() + ".out");
 	}	
 
+	/* Outputs a boxed round label for a given round */
 	void printRoundLabel(int n) {
 		this->output_handle_ << "|================================|\n";
 		this->output_handle_ << "|        Starting Round " << n;
@@ -125,6 +132,7 @@ private:
 		this->output_handle_ << "|================================|\n\n";
 	}
 
+	/* Outputs 'landed on' statistics for all Properties on the Board */
 	void printPropertyStatistics() {
 		this->output_handle_ << "|================================|\n";
 		this->output_handle_ << "|       Property Statistics      |\n";

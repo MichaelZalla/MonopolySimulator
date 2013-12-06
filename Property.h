@@ -16,32 +16,28 @@
 #include <iostream>
 #include <string>
 
+//Forward declaration of the Board and Player classes included
+class Board;
+class Player;
+
 using namespace std;
 
 class Property {
 
 public:
 
-	//typedef void (*responseFn) (Player& player)
+	//Typedef for a Property action function
+	typedef Property& (*ActionFn) (Board& board, Player& player);
 
 	//Class constructor
-	Property(string name) : count_(0) {
-		this->name_ = name;
-	}
+	Property(string name, ActionFn action = NULL)
+	: name_(name), action_(action), count_(0) { }
 
 	//Accessors methods
 	
-	/* Returns the Property's name */
 	string name() { return this->name_; }
-	
-	/* Returns the number of times a Player has landed on a Property */
 	int count() { return this->count_; }
 	
-	/* Allows for comparison between two Properties */
-	bool is(Property other) {
-		return (this->name_ == other.name());
-	}
-
 	//Mutator methods
 	
 	/* Returns a self-reference to allow for method chaining */
@@ -50,10 +46,23 @@ public:
 		return *this;
 	}
 
+	/**
+	 * Executes the action assigned to the Property at its instantiation.
+	 *
+	 * @param 	board 	A reference to a Board object
+	 * @param 	player 	A reference to a Player object
+	 */
+	void respond(Board& board, Player& player) {
+		if(this->action_ != NULL) {
+			this->action_(board, player);
+		}
+	}
+
 private:
 
 	string name_;
 	int count_;
+	ActionFn action_;
 
 };
 

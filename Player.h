@@ -102,8 +102,8 @@ private:
 		 * 1. The player is not in jail, and rolls two different numbers - RETURN
 		 * 2. The player is not in jail, and rolls doubles - RECURSIVE
 		 * 3. The player is not in jail, and rolls doubles for the third time - RETURN
-		 * 4. The player is in jail, and rolls doubles - RECUSRIVE
-		 * 5. The player is in jail, has been in jail for 3 turns - RECURSIVE
+		 * 4. The player is in jail, and rolls doubles - RETURN
+		 * 5. The player is in jail, has been in jail for 3 turns - RETURN / RECURSIVE
 		 * 6. The player is in jail, and does not roll doubles - RETURN
 		 */
 		
@@ -130,6 +130,8 @@ private:
 			}
 		} else {
 			/* Case 4 & 5*/
+			//You might have to rethink this ...
+			//What if a player rolls doubles on their 4th try?
 			if(doubles || this->doin_time_ >= Player::MAXIMUM_JAIL_SENTENCE) {
 				//Let the poor guy go ...
 				this->in_jail_ = false;
@@ -150,18 +152,11 @@ private:
 		//We're writing it this way so that the location index still 'wraps'
 		Property& dest = this->board_.propertyAt(this->location_ + sum);
 		this->location_ = this->board_.indexOf(dest);
-		//Increase the 'occupation' count for the destination Property
-		dest.incrementCount();
+		//Increase the 'occupation' count for the destination Property and have
+		//the destination Property respond to the Player if necessary
+		dest.incrementCount().respond(this->board_, *this);
 		this->printMove(sum);
-		//Determine whether any additional action must be taken based on
-		//the destination Property
-		this->resolveLocation();
-	}
-
-	void resolveLocation() {
-		//Yet to be implemented ...
-		//Property& l = this->board_.propertyAt(this->location_);
-		//l.respond();
+		
 	}
 
 	int getDiceRoll() const { return (rand() % 6) + 1; }

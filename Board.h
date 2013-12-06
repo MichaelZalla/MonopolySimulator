@@ -5,8 +5,9 @@
  *
  * Describes the public interface and private methods of the Monopoly Board class.
  * This class is designed to hold a series of Properties present on a classic, pre-
- * 2008 Monopoly board. Each Property stores a numeric id, a name, and a counter for
- * the number of times that property has been landed on.
+ * 2008 Monopoly board. Each Property stores a name, a counter for the number of times
+ * that the property has been landed on, and an action (response) to fire each time
+ * that a player lands on the Property.
  */
 
 #ifndef BOARD_H
@@ -21,6 +22,12 @@
 #include "lib/Queue.h"
 #include "Property.h"
 
+//Forward declaration of Player class included in "Simulator.h"
+class Player;
+
+//Includes the namespace where our Property actions are defined
+#include "Actions.h";
+
 class Board {
 
 public:
@@ -30,7 +37,7 @@ public:
 
 	/*** Public interface implementation ***/
 
-	/* Board class constructor */
+	//Board class constructor
 	Board() {
 
 		vector<string> property_names;
@@ -74,17 +81,16 @@ public:
 		property_names.push_back("Park Place");
 		property_names.push_back("Luxury Tax");
 		property_names.push_back("Boardwalk");
-
+		
+		//Construct the Properties list in dynamic memory
 		for(unsigned int i = 0; i < BOARD_SIZE; i++) {
 			Property* p_ptr = new Property(property_names[i]);
 			this->board_.push(p_ptr);
-			//cout << (p_ptr == this->board_.at(i)) << "\n";
-			//cout << (*p_ptr).name() << " :: " << this->propertyAt(i).name() << "\n\n";
 		}
 		
 	}
 	
-	/* Board class destructor */
+	//Board class destructor
 	~Board() {
 		for(unsigned int i = 0; i < this->board_.size(); i++) {
 			delete this->board_.at(i);
@@ -97,93 +103,45 @@ public:
 	 * Returns the board_ index of a given Property. Throws an invalid_argument
 	 * exception if no match is found in the Board.
 	 *
-	 * @param 	property 	A Property object
+	 * @param 	property 	A reference to a Property object
 	 */
-	int indexOf(Property property) const {
+	int indexOf(Property& property) const {
 		for(unsigned int i = 0; i < this->board_.size(); i++) {
-			if(this->propertyAt(i).is(property)) {
-				return i; 
+			//Because certain properties can hold the same name (e.g. - "Chance"),
+			//and we aren't giving each Property a unique id property, we'll just
+			//test for identity (location in memory)
+			if(&property == this->board_.at(i)) {
+				return i;
 			}
 		}
 		throw invalid_argument("This Property does no exist on the Board!");
 	}
 
 	/**
-	 * Returns the Property object that corresponds with a given board_ index.
-	 * Supports 'wrapping' of all out-of-bounds indices, including negative indices.
+	 * Returns a reference to the Property object that corresponds with a
+	 * give index. Supports 'wrapping' of all out-of-bounds indices, including
+	 * negative indices.
 	 *
 	 * @param 	n 	A Property index
 	 */
 	Property& propertyAt(int n) const {
-		//cout << "First signature\n";
-		//cout << "Test 1: " << ( & ( * ( this->board_.at(this->wrapIndex(n) ) ) ) ) << "\n";
-		//cout << "Test 2: " << this->board_.at(this->wrapIndex(n)) << "\n";
-		//cout << &(*(this->board_.at(this->wrapIndex(n)))) << "\n";
-		//cout << (*(this->board_.at(this->wrapIndex(n)))).count() << "\n";
-		//cout << (*(this->board_.at(this->wrapIndex(n)))).count() << "\n";
-		//(*(this->board_.at(this->wrapIndex(n)))).incrementCount();
 		return *(this->board_.at(this->wrapIndex(n)));
 	} 	
 
 	/**
-	 * Alternate implementation of propertyAt which allows the user to specify a
-	 * Property relative to a given Property, specified by an index. Both the index
-	 * and the offset value may be negative.
+	 * Alternate implementation of propertyAt which allows the user to specify
+	 * a Property relative to a given Property. The offset value may be either
+	 * positive or negative.
 	 *
-	 * @param 	n 	 	A Property index
-	 * @param 	offset 	An offset value
+	 * @param 	property A reference to a Property object
+	 * @param 	offset 	 An offset value
 	 */
- 	Property& propertyAt(Property property, int offset) const {
+ 	Property& propertyAt(Property& property, int offset) const {
  		int index = this->indexOf(property); //May throw an exception
  		return *(this->board_.at(this->wrapIndex(index + offset)));
 	}
 
-	/**
-	 * Returns the Property object corresponding to a given Property name.
-	 *
-	 * @param 	param1 	Description
-	 * @param 	param2 	Description
-	 * @param 	param3	Description
-	 * @return 			Description
-	 */
-	Property& propertyByName(string name) const {
-		for(unsigned int i = 0; i < this->board_.size(); i++) {
-			Property& p = this->propertyAt(i);
-			if(p.name() == name) {
-				return p;
-			}
-		}
-		//The Property could not be found
- 		throw invalid_argument("This Property does no exist on the Board!");
-	}
-
  	//Mutator methods
-
-	/**
-	 * Increments the number of times that a Property has been landed on. The Property
-	 * is specified by an index. Supports 'wrapping' of all out-of-bounds indices,
-	 * including negative indices.
-	 *
-	 * @param 	n 	A Property index
-	 */
-	
- 	void incrementCount(int n) {
-		/*
-		//A - DOES NOT WORK!
-		this->propertyAt(n).incrementCount();
-		//cout << this->propertyAt(n).count() << "\n";
-		*/
-
-		//B - WORKS!
-		(*(this->board_.at(n))).incrementCount();
-		//cout << (*(this->board_.at(n))).count() << "\n";
-
-		/*
-		//C - DOES NOT WORK!
-		this->incrementCount(n);
-		//cout << this->propertyAt(n).count() << "\n";
-		*/
-	}
 
 private:
 
