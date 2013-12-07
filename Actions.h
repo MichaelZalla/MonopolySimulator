@@ -1,44 +1,114 @@
+/**
+ * @file Actions.h
+ * @author Michael Zalla
+ * @date 12-6-2013
+ *
+ * Describes the action functions needed by the Board class to instantiate
+ * each Property object on the Board.
+ */
+
+#include <fstream>
+
+//Forward declaration of class dependencies
+class Player;
+
 namespace Actions {
 	
+	/* Sends the Player to Jail */
+	void goToJail(Board& board, Player& player, ofstream& output) {
+		player.setLocation(Board::JAIL_LOCATION);
+		board.propertyAt(Board::JAIL_LOCATION).incrementCount();
+		player.setDetention(true);
+		//Report the arrest
+		output << " Player " << player.getId() << " is hauled off to Jail!\n";
+	}
+
+	/* Lets the Player take a 'Chance' card */
+	void drawChance(Board& board, Player& player, ofstream& output) {
+		output << " Player " << player.getId() << " draws a Chance card.\n";
+	}
+
+	/* Lets the Player take a 'Community Chest' card */
+	void drawCommunityChest(Board& board, Player& player, ofstream& output) {
+		output << " Player " << player.getId() << " draws a Community Chest.\n";
+	}
+
+	/* Generic movement action */
+	void advanceToNthProperty(Board& board, Player& player, ofstream& output, int n) {
+		player.setLocation(n);
+		Property& property = board.propertyAt(n);
+		property.incrementCount();
+		//Report the move
+		output << " Player " << player.getId() << " moves to " << property.name() << "\n";
+	}
+	
+	void advanceToGo(Board& board, Player& player, ofstream& output) {
+		advanceToNthProperty(board, player, output, 0);
+	}
+
+	void advanceToIllinois(Board& board, Player& player, ofstream& output) {
+		advanceToNthProperty(board, player, output, 24);
+	}
+
+	void advanceToStCharles(Board& board, Player& player, ofstream& output) {
+		advanceToNthProperty(board, player, output, 11);
+	}
+
+	void advanceToNearestUtility(Board& board, Player& player, ofstream& output) {
+		output << " Player " << player.getId() << " drew ";
+		output << "'Advance to nearest Utility'.\n";		
+		int l = player.getLocation();
+		if(l > 12 && l < 28) {
+			//Move the Player to Water Works
+			advanceToNthProperty(board, player, output, 28);
+		} else {
+			//Move the Player to Electric Company
+			advanceToNthProperty(board, player, output, 12);
+		}
+	}
+
+	void advanceToNearestRailroad(Board& board, Player& player, ofstream& output) {
+		output << " Player " << player.getId() << " drew ";
+		output << "'Advance to nearest Railroad'.\n";
+		int l = player.getLocation();
+		if(l > 36 || l < 5) {
+			//Move the Player to Reading Railroad
+			advanceToNthProperty(board, player, output, 5);
+		}
+		if(l > 5 && l < 15) {
+			//Move the Player to Pennsylvania Railroad
+			advanceToNthProperty(board, player, output, 15);
+		}
+		if(l > 15 && l < 25) {
+			//Move the Player to B. & O. Railroad
+			advanceToNthProperty(board, player, output, 25);
+		}
+		if(l > 25 && l < 36) {
+			//Move the Player to Short Line
+			advanceToNthProperty(board, player, output, 35);
+		}
+	}
+
+	void advanceToReadingRailroad(Board& board, Player& player, ofstream& output) {
+		advanceToNthProperty(board, player, output, 5);
+	}
+
+	void advanceToBoardwalk(Board& board, Player& player, ofstream& output) {
+		advanceToNthProperty(board, player, output, 39);
+	}
+
+	void retreatThreeSpaces(Board& board, Player& player, ofstream& output) {
+		output << " Player " << player.getId() << " drew ";
+		output << "'Go back 3 spaces'.\n";
+		Property& current = board.propertyAt(player.getLocation());
+		int n = board.indexOf(board.propertyAt(current, -3));
+		advanceToNthProperty(board, player, output, n);
+	}
+	/*	
+	void getOutOfJail(Player& player) {
+	
+	}
+	*/
+
 };
 
-/*
-
-
-
-Advance to Go
-Advance to Illinois Ave.
-Advance to St. Charles Place
-Advance token to nearest Utility
-Advance to nearest Railroad
-Bank pays you divident of $50
-Get Out of Jail Free
-Go back 3 spaces
-Go to Jail
-Make general repairs on all your property
-Pay poor tax of $15
-Take a ride on the Reading Railroad
-Advance token to Boardwalk
-You have been elected Charirman of the Board
-Your building and loan matures
-You have won a crossword competition
-
-Advance to Go
-Bank error in your favor
-Doctor's fees
-From sale of stock you get $50
-Get Out of Jail Free
-Go to Jail
-Grand Opera opening
-Xmas fund matures
-Income tax refund
-It is your birthday
-Life insurance matures
-Pay hospital fees of $100
-Pay school fees of $150
-Receive for Services $25
-You are assessed for street repairs
-You have won second prize in a beauty contest
-You inherit $100
-
-*/

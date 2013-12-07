@@ -1,9 +1,11 @@
 CC = g++
 CFLAGS = -c -Wall -ggdb -I. 
 LDFLAGS =
+
 # List your CPP files here
-SOURCES = main.cpp
+SOURCES = Simulator.cpp Board.cpp
 EXECUTABLE = a.out
+
 # List your Test.h files here
 #TESTS = PropertyTest.h BoardTest.h
 TESTS = tests/CardTest.h
@@ -14,7 +16,7 @@ TESTS = tests/CardTest.h
 OBJECTS = $(SOURCES:.cpp=.o)
 # List your .o files that should be part of tests here
 # Usually everything except for main.o
-OBJECTSTEST =
+OBJECTSTEST = $(OBJECTS)
 
 FLAGS = -I.
 

@@ -41,11 +41,9 @@ public:
 			throw invalid_argument("Invalid number of command-line arguments!");
 		} else {
 			int pc = atoi(argv[1]);
-			/*
 			if(pc < 2 || pc > 6) {
 				throw invalid_argument("Invalid number of players. Only 2—6 players may play!");
 			}
-			*/
 			this->player_count_ = atoi(argv[1]);
 			this->turn_count_ = atoi(argv[2]);
 			if(argc > 3) {
