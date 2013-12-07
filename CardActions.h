@@ -10,6 +10,7 @@
 #include <fstream>
 
 //Forward declaration of class dependencies
+class Simulator;
 class Player;
 
 namespace CardActions {
@@ -57,7 +58,7 @@ namespace CardActions {
 
 	void advanceToNearestRailroad(Board& board, Player& player, ofstream& output) {
 		int l = player.getLocation();
-		if(l > 36 || l < 5) {
+		if(l > 35 || l < 5) {
 			//Move the Player to Reading Railroad
 			advanceToNthProperty(board, player, output, 5);
 		}
@@ -69,7 +70,7 @@ namespace CardActions {
 			//Move the Player to B. & O. Railroad
 			advanceToNthProperty(board, player, output, 25);
 		}
-		if(l > 25 && l < 36) {
+		if(l > 25 && l < 35) {
 			//Move the Player to Short Line
 			advanceToNthProperty(board, player, output, 35);
 		}

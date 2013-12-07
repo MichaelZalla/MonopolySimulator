@@ -12,6 +12,7 @@
 #include <string>
 
 //Forward declarations of class dependencies
+class Simulator;
 class Player;
 class Board;
 
