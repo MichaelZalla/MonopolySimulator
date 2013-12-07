@@ -18,7 +18,6 @@
 #include "Player.h"
 
 //Forward declaration
-class Simulator;
 class Board;
 
 using namespace std;
@@ -27,13 +26,7 @@ class Property {
 
 public:
 
-	//typedef void (*ActionFn) (Board& board, Player& player, ofstream& output);
-
 	//Class constructor
-	/*
-	Property(string name, ActionFn action = NULL)
-	: name_(name), count_(0), action_(action) { }
-	*/
 	Property(string name) : name_(name) { }
 
 	//Accessors methods
@@ -42,19 +35,11 @@ public:
 	
 	//Mutator methods
 	void incrementCount() { this->count_ += 1; }
-	/*
-	void respond(Board& board, Player& player, ofstream& output) {
-		if(this->action_ != NULL) {
-			this->action_(board, player, output);
-		}
-	}
-	*/
 
 private:
 
 	string name_;
 	int count_;
-	//ActionFn action_;
 	
 };
 

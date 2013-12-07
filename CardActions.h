@@ -20,7 +20,7 @@ namespace CardActions {
 		board.propertyAt(Board::JAIL_LOCATION).incrementCount();
 		player.setDetention(true);
 		//Report the arrest
-		output << " Player " << player.getId() << " is hauled off to Jail!\n";
+		output << "Player " << player.getId() << " is hauled off to Jail!\n";
 	}
 
 	/* Generic movement action */
@@ -29,7 +29,7 @@ namespace CardActions {
 		Property& property = board.propertyAt(n);
 		property.incrementCount();
 		//Report the move
-		output << " Player " << player.getId() << " moves to " << property.name() << "\n";
+		output << "Player " << player.getId() << " moves to " << property.name() << "\n";
 	}
 	
 	void advanceToGo(Board& board, Player& player, ofstream& output) {

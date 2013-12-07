@@ -16,6 +16,8 @@
 #include <fstream>
 #include <stdexcept>
 
+#include <iostream>
+
 //Class header include
 #include "Simulator.h"
 
@@ -40,16 +42,16 @@ using namespace std;
 * @param 	config 	An existing SimulatorConfig object
 */
 Simulator::Simulator(SimulatorConfig config) : config_(config) {
-	//Set up the output handle for writing simulation results
-	try {
-		//Open a new file with a dynamic filename
-		this->output_handle_.open(this->getOutputPath().c_str(),
-								  ofstream::out | ofstream::trunc);
-	} catch(const ofstream::failure &e) {
-		throw runtime_error("Exception occured when opening a file for writing.\n\n");
+	//Seed the random number generator, if a seed was specified
+	if(this->config_.hasSeed()) {
+		srand(this->config_.seed());
 	}
-	//Run the simulation
-	this->runSimulation();
+	//Clear the contents of the output file, if it exists
+	this->clearOutput();
+	//Print config summary
+	this->printConfigSummary();
+	//Conditional output until reporting of Property statistics
+	this->allowOutput(this->config_.isVerbose());
 }
 
 /**
@@ -84,14 +86,15 @@ void Simulator::runSimulation() {
 	for(unsigned int r_index = 0; r_index < this->config_.turnCount(); r_index++) {
 		//For each round (turn set) of the simulation
 		this->printRoundLabel(r_index);
-		for(unsigned int p_index = 0; p_index < this->config_.playerCount(); p_index++) {
+		for(unsigned int p_index = 0; p_index < this->config_.playerCount(); p_index++) {			
 			//For each participating Player
 			Player& player = *(this->players_[p_index]);
-			this->output_handle_ << " Player " << player.getId() << "'s turn ...\n";
+			//State where the player currently resides
+			this->output_handle_ << "Player " << player.getId() << " starting on ";
+			string current = this->board_.propertyAt(player.getLocation()).name();
+			this->output_handle_ << current << "\n";
 			//Recursive 'move' method
 			this->simulateTurn(player);
-			//Space out turn reports
-			this->output_handle_ << "\n";
 		}
 	}
 	
@@ -102,12 +105,37 @@ void Simulator::runSimulation() {
 
 /*** Private method implementation ***/
 
-void Simulator::populateBoard() {
-	/*
-	if(this->board_.size() > 0) {
-		throw runtime_error("Cannot call Simulator::populateBoard on a non-empty Board!");
+/* Toggles program output. Redirects unwanted output to /dev/null */
+void Simulator::allowOutput(bool allow) {
+	if(this->output_handle_.is_open()) {
+		this->output_handle_.close();
 	}
-	*/
+	if(!allow) {
+		this->output_handle_.open("/dev/null");
+	} else {
+		try {
+			this->output_handle_.open(this->getOutputPath().c_str(),
+									  ofstream::out | ofstream::app);
+		} catch(const ofstream::failure &e) {
+			throw runtime_error("Exception occured when opening a file for writing.\n\n");
+		}
+	}
+}
+
+/* Clears the text contents of the output file */
+void Simulator::clearOutput() {
+	if(this->output_handle_.is_open()) {
+		this->output_handle_.close();
+	}
+	try {
+		this->output_handle_.open(this->getOutputPath().c_str(),
+								  ofstream::out | ofstream::trunc);
+	} catch(const ofstream::failure &e) {
+		throw runtime_error("Exception occured when opening a file for writing.\n\n");
+	}
+}
+
+void Simulator::populateBoard() {
 	//Populate the Board with Monopoly properties	
 	this->board_.addProperty(*(new Property("Go")));
 	this->board_.addProperty(*(new Property("Mediterranean Avenue")));
@@ -221,7 +249,7 @@ void Simulator::simulateTurn(Player& player, int r_depth) {
  			player.hasGetOutOfJailChance = false;
  			player.setDetention(false);
  			this->chance_deck_.push(*(new Card("Get Out of Jail Free")));
- 			this->output_handle_ << " Player " << player.getId() << " uses his ";
+ 			this->output_handle_ << "Player " << player.getId() << " uses his ";
  			this->output_handle_ << "'Get Out of Jail Free' card to leave Jail.\n";
  		} else
  		if(player.hasGetOutOfJailCommunityChest) {
@@ -229,7 +257,7 @@ void Simulator::simulateTurn(Player& player, int r_depth) {
  			player.hasGetOutOfJailCommunityChest = false;
  			player.setDetention(false);
  			this->community_chest_deck_.push(*(new Card("Get Out of Jail Free")));
-  			this->output_handle_ << " Player " << player.getId() << " uses his ";
+  			this->output_handle_ << "Player " << player.getId() << " uses his ";
  			this->output_handle_ << "'Get Out of Jail Free' card to leave Jail.\n";
  		}
 	}
@@ -238,16 +266,16 @@ void Simulator::simulateTurn(Player& player, int r_depth) {
 	int die1, die2;
 	bool doubles = ((die1 = this->getDiceRoll()) == (die2 = this->getDiceRoll()));
 	//Report the dice roll
-	this->output_handle_ << " Player " << player.getId() << " rolled ";
-	this->output_handle_ << "(" << die1 << ", " << die2 << ")\n";
+	this->output_handle_ << "Player " << player.getId() << " rolls " << die1 << "+" << die2 << "\n";
 
 	/**
 	 * Possible roll cases:
 	 *
 	 * 1. The player is not in jail, and rolls two different numbers - RETURN
 	 * 2. The player is not in jail, and rolls doubles - RECURSIVE
+	 *      - Must check that the Player didn't land in Jail after the first roll!
 	 * 3. The player is not in jail, and rolls doubles for the third time - RETURN
-	 * 4. The player is in jail, and rolls doubles - RETURN
+	 * 4. The player is in jail, and rolls doubles - RECURSIVE
 	 * 5. The player is in jail, has been in jail for 3 turns - RETURN
 	 * 6. The player is in jail, and does not roll doubles - RETURN
 	 */
@@ -261,26 +289,40 @@ void Simulator::simulateTurn(Player& player, int r_depth) {
 	 	/* Case 2 */
 	 	if(doubles && r_depth < 2) {
 	 		this->advancePlayerBy(player, die1 * 2);
-	 		return this->simulateTurn(player, r_depth + 1);
+	 		//We must check again for Player::isDetained ... If they landed on
+	 		//'Go To Jail', then this value will have changed, and landing in Jail
+	 		//loses you your right to re-roll on doubles!
+	 		if(!player.isDetained()) {
+	 			return this->simulateTurn(player, r_depth + 1);
+	 		} else {
+				return;	 			
+	 		}
 	 	} else
 	 	/* Case 3 */
 	 	if(r_depth >= 2) {
 	 		//The Player has rolled 'doubles' three times in a row. As per Monopoly
 	 		//rules, they are sent to jail!
-	 		this->output_handle_ << " Player " << player.getId() << " has rolled 'doubles' three times!\n";
+	 		this->output_handle_ << "Player " << player.getId() << " has rolled 'doubles' three times!\n";
 	 		this->arrestPlayer(player);
 	 		return;
 	 	}
 	 } else {
-	 	/* Cases 4 & 5 */
-	 	//What if a player rolls 'doubles' on their fourth try?
-	 	if(doubles || player.getTurnsInJail() >= Player::MAXIMUM_JAIL_SENTENCE) {
-	 		//Let the Player advance according to their roll
+	 	/* Cases 4 */
+	 	if(doubles) {
+			//Let the Player advance according to their roll
 	 		this->releasePlayer(player);
 	 		this->advancePlayerBy(player, die1 + die2);
+	 		return this->simulateTurn(player, r_depth + 1);
+	 	} else
+	 	/* Case 5 */
+	 	if(player.getTurnsInJail() >= Player::MAXIMUM_JAIL_SENTENCE) {
+			//Let the Player advance according to their roll
+	 		this->releasePlayer(player);
+	 		this->advancePlayerBy(player, die1 + die2);
+	 		return;
 	 	} else {
 	 	/* Case 6 */
-	 		this->output_handle_ << " Player " << player.getId() << " spends another lonely night in Jail.\n";
+	 		this->output_handle_ << " -> Player " << player.getId() << " spends another lonely night in Jail.\n";
 		 	player.incrementTurnsInJail();
 		 	return;
 	 	}
@@ -304,7 +346,7 @@ void Simulator::advancePlayerBy(Player& player, int roll) {
 	Property& destination = this->board_.propertyAt(player.getLocation() + roll);
 	player.setLocation(this->board_.indexOf(destination));
 	//Report the Player's move
-	this->output_handle_ << " Player " << player.getId() << " moves to ";
+	this->output_handle_ << "Player " << player.getId() << " landed on ";
 	this->output_handle_ << destination.name() << "\n";
 	//Increase the destination Property's counter
 	destination.incrementCount();
@@ -327,8 +369,7 @@ void Simulator::drawChance(Player& player) {
 	Card card = this->chance_deck_.front();
 	this->chance_deck_.pop();
 	//Report the resulting card
-	this->output_handle_ << " Player " << player.getId() << " drew a ";
-	this->output_handle_ << "'" << card.description() << "'\n";
+	this->output_handle_ << " -> Chance - " << card.description() << "\n";
 	//Determine whether this is a 'Get out of Jail Free' card
 	if(card.description() == "Get Out of Jail Free") {
 		//Set the appropriate flag for the Player
@@ -348,7 +389,7 @@ void Simulator::drawCommunityChest(Player& player) {
 	Card card = this->community_chest_deck_.front();
 	this->community_chest_deck_.pop();
 	//Report the resulting card
-	this->output_handle_ << " Player " << player.getId() << " drew a ";
+	this->output_handle_ << "Player " << player.getId() << " drew a ";
 	this->output_handle_ << "'" << card.description() << "'\n";
 	//Determine whether this is a 'Get out of Jail Free' card
 	if(card.description() == "Get Out of Jail Free") {
@@ -359,7 +400,7 @@ void Simulator::drawCommunityChest(Player& player) {
 		card.performAction(this->board_, player, this->output_handle_);
 		//Return the card to the back of the deck
 		this->community_chest_deck_.push(card);
-	}	
+	}
 }
 
 /* Moves a Player to the Jail, updating that Player's state */
@@ -368,7 +409,7 @@ void Simulator::arrestPlayer(Player& player) {
 	this->board_.propertyAt(Board::JAIL_LOCATION).incrementCount();
 	player.setDetention(true);
 	//Report the arrest
-	this->output_handle_ << " Player " << player.getId() << " is hauled off to Jail!\n";
+	this->output_handle_ << " -> Player " << player.getId() << " is hauled off to Jail!\n";
 }
 
 /* Releases the Player from Jail, updating the Player's state */
@@ -376,7 +417,7 @@ void Simulator::releasePlayer(Player& player) {
 	//Release the player
 	player.setDetention(false);
 	//Report the release
-	this->output_handle_ << " Player " << player.getId() << " was released from Jail!\n";
+	this->output_handle_ << " -> Player " << player.getId() << " was released from Jail!\n";
 }
 
 //Private helper methods
@@ -388,6 +429,7 @@ string Simulator::getOutputPath() const {
 	output_path << this->config_.playerCount() << 'p';
 	output_path << this->config_.turnCount() << 'r';
 	if(this->config_.hasSeed()) { output_path << this->config_.seed() << 's'; }
+	else { output_path << 'Rand';}
 	if(this->config_.isVerbose()) { output_path << 'v'; }
 	//Return a string copy of the path
 	return string("output/" + output_path.str() + ".out");
@@ -395,25 +437,44 @@ string Simulator::getOutputPath() const {
 
 /* Outputs a boxed round label for a given round */
 void Simulator::printRoundLabel(int n) {
+	this->output_handle_ << "++++++++++++++++++++\n";
+	this->output_handle_ << "Starting round " << (n + 1) << "\n";
+	/*
 	this->output_handle_ << "|================================|\n";
 	this->output_handle_ << "|        Starting Round ";
 	this->output_handle_.width(9);
 	this->output_handle_ << left << n;
 	this->output_handle_ << "|\n";
 	this->output_handle_ << "|================================|\n\n";
+	*/
+}
+
+/* Outputs starting configuration/settings */
+void Simulator::printConfigSummary() {
+	this->allowOutput(true);
+	this->output_handle_ << "Num Players: " << this->config_.playerCount() << " ";
+	this->output_handle_ << "Turns: " << this->config_.turnCount() << "\n";
+	this->output_handle_ << "Verbose: " << this->config_.isVerbose() << "\n";
 }
 
 /* Outputs 'landed on' statistics for all Properties on the Board */
 void Simulator::printPropertyStatistics() {
+	this->allowOutput(true);
+	this->output_handle_ << "\n";
+	/*
 	this->output_handle_ << "|================================|\n";
 	this->output_handle_ << "|       Property Statistics      |\n";
 	this->output_handle_ << "|================================|\n\n";
+	*/
 	for(unsigned int i = 0; i < Board::BOARD_SIZE; i++) {
 		Property p = this->board_.propertyAt(i);
+		/*
 		this->output_handle_.width(22);
 		this->output_handle_ << left << " " + p.name();
 		this->output_handle_.width(11);
 		this->output_handle_ << right << p.count() << "\n";
+		*/
+		this->output_handle_ << p.name() << " :: " << p.count() << "\n";
 	}
 }
 

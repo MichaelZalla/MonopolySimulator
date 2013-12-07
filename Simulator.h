@@ -55,6 +55,9 @@ private:
 
 	/*** Private method implementation ***/
 
+	void allowOutput(bool allow);
+	void clearOutput();
+
 	void populateBoard();
 	void populateChanceDeck();
 	void populateCommunityChestDeck();
@@ -74,6 +77,7 @@ private:
 	string getOutputPath() const;	
 	
 	void printRoundLabel(int n);
+	void printConfigSummary();
 	void printPropertyStatistics();
 
 };
