@@ -24,6 +24,8 @@
 #include "SimulatorConfig.h"
 #include "Board.h"
 #include "Player.h"
+#include "lib/Queue.h"
+#include "Card.h"
 
 class Simulator {
 
@@ -33,6 +35,8 @@ public:
  	Simulator(SimulatorConfig config);
 	//Simulation class destructor
 	~Simulator();
+
+	void runSimulation();
 
 private:
 
@@ -46,17 +50,24 @@ private:
 	Board board_;
 	vector<Player*> players_;
 
+	Queue<Card> chance_deck_;
+	Queue<Card> community_chest_deck_;
+
 	/*** Private method implementation ***/
 
-	void runSimulation();
-	
+	void populateBoard();
+	void populateChanceDeck();
+	void populateCommunityChestDeck();
+
 	void simulateTurn(Player& player, int r_depth = 0);
 	int getDiceRoll();
 
 	void advancePlayerBy(Player& player, int roll);
 	
-	void arrestPlayer(Player&);
-	void releasePlayer(Player&);
+	void drawChance(Player& player);
+	void drawCommunityChest(Player& player);
+	void arrestPlayer(Player& player);
+	void releasePlayer(Player& player);
 
 	//Helper methods
 

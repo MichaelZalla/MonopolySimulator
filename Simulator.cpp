@@ -14,6 +14,7 @@
 #include <vector>
 #include <sstream>
 #include <fstream>
+#include <stdexcept>
 
 //Class header include
 #include "Simulator.h"
@@ -22,9 +23,11 @@
 #include "SimulatorConfig.h"
 #include "Board.h"
 #include "Player.h"
+#include "lib/Queue.h"
+#include "Card.h"
 
 //Include namespace containing Property and Card action functions
-#include "Actions.h"
+#include "CardActions.h"
 
 using namespace std;
 
@@ -63,56 +66,15 @@ Simulator::~Simulator() {
 	}
 }
 
-/*** Private method implementation ***/
-
 /* Simulation loop. Simulates player turns and outputs simulation results. */
 void Simulator::runSimulation() {
-	//Populate the Board with Monopoly properties	
-	this->board_.addProperty(*(new Property("Go")));
-	this->board_.addProperty(*(new Property("Mediterranean Avenue")));
-	this->board_.addProperty(*(new Property("Community Chest", Actions::drawCommunityChest)));
-	this->board_.addProperty(*(new Property("Baltic Avenue")));
-	this->board_.addProperty(*(new Property("Income Tax")));
-	this->board_.addProperty(*(new Property("Reading Railroad")));
-	this->board_.addProperty(*(new Property("Oriental Avenue")));
-	this->board_.addProperty(*(new Property("Chance", Actions::drawChance)));
-	this->board_.addProperty(*(new Property("Vermont Avenue")));
-	this->board_.addProperty(*(new Property("Connecticut Avenue")));
-	this->board_.addProperty(*(new Property("In Jail/Just Visiting")));
-	this->board_.addProperty(*(new Property("St. Charles Place")));
-	this->board_.addProperty(*(new Property("Electric Company")));
-	this->board_.addProperty(*(new Property("States Avenue")));
-	this->board_.addProperty(*(new Property("Virginia Avenue")));
-	this->board_.addProperty(*(new Property("Pennsylvania Railroad")));
-	this->board_.addProperty(*(new Property("St. James Place")));
-	this->board_.addProperty(*(new Property("Community Chest", Actions::drawCommunityChest)));
-	this->board_.addProperty(*(new Property("Tennessee Avenue")));
-	this->board_.addProperty(*(new Property("New York Avenue")));
-	this->board_.addProperty(*(new Property("Free Parking")));
-	this->board_.addProperty(*(new Property("Kentucky Avenue")));
-	this->board_.addProperty(*(new Property("Chance", Actions::drawChance)));
-	this->board_.addProperty(*(new Property("Indiana Avenue")));
-	this->board_.addProperty(*(new Property("Illinois Avenue")));
-	this->board_.addProperty(*(new Property("B. & O. Railroad")));
-	this->board_.addProperty(*(new Property("Alantic Avenue")));
-	this->board_.addProperty(*(new Property("Ventnor Avenue")));
-	this->board_.addProperty(*(new Property("Water Works")));
-	this->board_.addProperty(*(new Property("Marvin Gardens")));
-	this->board_.addProperty(*(new Property("Go To Jail", Actions::goToJail)));
-	this->board_.addProperty(*(new Property("Pacific Avenue")));
-	this->board_.addProperty(*(new Property("North Carolina AVenue")));
-	this->board_.addProperty(*(new Property("Community Chest", Actions::drawCommunityChest)));
-	this->board_.addProperty(*(new Property("Pennsylvania Avenue")));
-	this->board_.addProperty(*(new Property("Short Line")));
-	this->board_.addProperty(*(new Property("Chance", Actions::drawChance)));
-	this->board_.addProperty(*(new Property("Park Place")));
-	this->board_.addProperty(*(new Property("Luxury Tax")));
-	this->board_.addProperty(*(new Property("Boardwalk")));
+	
+	this->populateBoard();
+	this->populateChanceDeck();
+	this->populateCommunityChestDeck();
 
 	//Generate the Players to act out our simulation
 	for(unsigned int i = 0; i < this->config_.playerCount(); i++) {
-		//Determine a seed to pass to the Player objects
-		int seed = (this->config_.hasSeed()) ? this->config_.seed() : time(NULL);
 		//Create a new Player object, passing it a reference to our Board,
 		//the seed, and a reference to the output stream
 		this->players_.push_back(new Player(i));
@@ -138,6 +100,107 @@ void Simulator::runSimulation() {
 
 }
 
+/*** Private method implementation ***/
+
+void Simulator::populateBoard() {
+	/*
+	if(this->board_.size() > 0) {
+		throw runtime_error("Cannot call Simulator::populateBoard on a non-empty Board!");
+	}
+	*/
+	//Populate the Board with Monopoly properties	
+	this->board_.addProperty(*(new Property("Go")));
+	this->board_.addProperty(*(new Property("Mediterranean Avenue")));
+	this->board_.addProperty(*(new Property("Community Chest")));
+	this->board_.addProperty(*(new Property("Baltic Avenue")));
+	this->board_.addProperty(*(new Property("Income Tax")));
+	this->board_.addProperty(*(new Property("Reading Railroad")));
+	this->board_.addProperty(*(new Property("Oriental Avenue")));
+	this->board_.addProperty(*(new Property("Chance")));
+	this->board_.addProperty(*(new Property("Vermont Avenue")));
+	this->board_.addProperty(*(new Property("Connecticut Avenue")));
+	this->board_.addProperty(*(new Property("In Jail/Just Visiting")));
+	this->board_.addProperty(*(new Property("St. Charles Place")));
+	this->board_.addProperty(*(new Property("Electric Company")));
+	this->board_.addProperty(*(new Property("States Avenue")));
+	this->board_.addProperty(*(new Property("Virginia Avenue")));
+	this->board_.addProperty(*(new Property("Pennsylvania Railroad")));
+	this->board_.addProperty(*(new Property("St. James Place")));
+	this->board_.addProperty(*(new Property("Community Chest")));
+	this->board_.addProperty(*(new Property("Tennessee Avenue")));
+	this->board_.addProperty(*(new Property("New York Avenue")));
+	this->board_.addProperty(*(new Property("Free Parking")));
+	this->board_.addProperty(*(new Property("Kentucky Avenue")));
+	this->board_.addProperty(*(new Property("Chance")));
+	this->board_.addProperty(*(new Property("Indiana Avenue")));
+	this->board_.addProperty(*(new Property("Illinois Avenue")));
+	this->board_.addProperty(*(new Property("B. & O. Railroad")));
+	this->board_.addProperty(*(new Property("Alantic Avenue")));
+	this->board_.addProperty(*(new Property("Ventnor Avenue")));
+	this->board_.addProperty(*(new Property("Water Works")));
+	this->board_.addProperty(*(new Property("Marvin Gardens")));
+	this->board_.addProperty(*(new Property("Go To Jail")));
+	this->board_.addProperty(*(new Property("Pacific Avenue")));
+	this->board_.addProperty(*(new Property("North Carolina AVenue")));
+	this->board_.addProperty(*(new Property("Community Chest")));
+	this->board_.addProperty(*(new Property("Pennsylvania Avenue")));
+	this->board_.addProperty(*(new Property("Short Line")));
+	this->board_.addProperty(*(new Property("Chance")));
+	this->board_.addProperty(*(new Property("Park Place")));
+	this->board_.addProperty(*(new Property("Luxury Tax")));
+	this->board_.addProperty(*(new Property("Boardwalk")));
+}
+
+void Simulator::populateChanceDeck() {
+	this->chance_deck_.push(*(new Card("Advance to Go",
+										CardActions::advanceToGo)));
+	this->chance_deck_.push(*(new Card("Advance to Illinois Ave.",
+										CardActions::advanceToIllinois)));
+	this->chance_deck_.push(*(new Card("Advance to St. Charles Place",
+										CardActions::advanceToStCharles)));
+	this->chance_deck_.push(*(new Card("Advance token to nearest Utility",
+										CardActions::advanceToNearestUtility)));
+	this->chance_deck_.push(*(new Card("Advance to nearest Railroad",
+										CardActions::advanceToNearestRailroad)));
+	this->chance_deck_.push(*(new Card("Bank pays you divident of $50")));
+	this->chance_deck_.push(*(new Card("Get Out of Jail Free")));
+	this->chance_deck_.push(*(new Card("Go back 3 spaces",
+										CardActions::retreatThreeSpaces)));
+	this->chance_deck_.push(*(new Card("Go to Jail",
+										CardActions::goToJail)));
+	this->chance_deck_.push(*(new Card("Make general repairs on all your property")));
+	this->chance_deck_.push(*(new Card("Pay poor tax of $15")));
+	this->chance_deck_.push(*(new Card("Take a ride on the Reading Railroad",
+										CardActions::advanceToReadingRailroad)));
+	this->chance_deck_.push(*(new Card("Advance token to Boardwalk",
+										CardActions::advanceToBoardwalk)));
+	this->chance_deck_.push(*(new Card("You have been elected Charirman of the Board")));
+	this->chance_deck_.push(*(new Card("Your building and loan matures")));
+	this->chance_deck_.push(*(new Card("You have won a crossword competition")));
+}
+
+void Simulator::populateCommunityChestDeck() {
+	this->community_chest_deck_.push(*(new Card("Advance to Go",
+												CardActions::advanceToGo)));
+	this->community_chest_deck_.push(*(new Card("Bank error in your favor")));
+	this->community_chest_deck_.push(*(new Card("Doctor's fees")));
+	this->community_chest_deck_.push(*(new Card("From sale of stock you get $50")));
+	this->community_chest_deck_.push(*(new Card("Get Out of Jail Free")));
+	this->community_chest_deck_.push(*(new Card("Go to Jail",
+												CardActions::goToJail)));
+	this->community_chest_deck_.push(*(new Card("Grand Opera opening")));
+	this->community_chest_deck_.push(*(new Card("Xmas fund matures")));
+	this->community_chest_deck_.push(*(new Card("Income tax refund")));
+	this->community_chest_deck_.push(*(new Card("It is your birthday")));
+	this->community_chest_deck_.push(*(new Card("Life insurance matures")));
+	this->community_chest_deck_.push(*(new Card("Pay hospital fees of $100")));
+	this->community_chest_deck_.push(*(new Card("Pay school fees of $150")));
+	this->community_chest_deck_.push(*(new Card("Receive for Services $25")));
+	this->community_chest_deck_.push(*(new Card("You are assessed for street repairs")));
+	this->community_chest_deck_.push(*(new Card("You have won second prize in a beauty contest")));
+	this->community_chest_deck_.push(*(new Card("You inherit $100")));
+}
+
 /**
  * Recursive move function. Simulates a Player's dice roll and responds
  * to the resulting roll, depending on the Player's current state. This
@@ -151,6 +214,26 @@ void Simulator::runSimulation() {
  */
 void Simulator::simulateTurn(Player& player, int r_depth) {
 	
+	//Check whether the Player is in Jail and may use a Get Out of Jail Free card
+	if(player.isDetained()) {
+		if(player.hasGetOutOfJailChance) {
+ 			//'Remove' the card from the Player's hand, and 'return' it to the deck
+ 			player.hasGetOutOfJailChance = false;
+ 			player.setDetention(false);
+ 			this->chance_deck_.push(*(new Card("Get Out of Jail Free")));
+ 			this->output_handle_ << " Player " << player.getId() << " uses his ";
+ 			this->output_handle_ << "'Get Out of Jail Free' card to leave Jail.\n";
+ 		} else
+ 		if(player.hasGetOutOfJailCommunityChest) {
+ 			//'Remove' the card from the Player's hand, and 'return' it to the deck
+ 			player.hasGetOutOfJailCommunityChest = false;
+ 			player.setDetention(false);
+ 			this->community_chest_deck_.push(*(new Card("Get Out of Jail Free")));
+  			this->output_handle_ << " Player " << player.getId() << " uses his ";
+ 			this->output_handle_ << "'Get Out of Jail Free' card to leave Jail.\n";
+ 		}
+	}
+
 	//Simulate the Player's dice roll
 	int die1, die2;
 	bool doubles = ((die1 = this->getDiceRoll()) == (die2 = this->getDiceRoll()));
@@ -184,7 +267,7 @@ void Simulator::simulateTurn(Player& player, int r_depth) {
 	 	if(r_depth >= 2) {
 	 		//The Player has rolled 'doubles' three times in a row. As per Monopoly
 	 		//rules, they are sent to jail!
-	 		this->output_handle_ << "Player " << player.getId() << " has rolled 'doubles' three times!\n";
+	 		this->output_handle_ << " Player " << player.getId() << " has rolled 'doubles' three times!\n";
 	 		this->arrestPlayer(player);
 	 		return;
 	 	}
@@ -197,9 +280,9 @@ void Simulator::simulateTurn(Player& player, int r_depth) {
 	 		this->advancePlayerBy(player, die1 + die2);
 	 	} else {
 	 	/* Case 6 */
-	 		this->output_handle_ << "Player " << player.getId() << " spends another lonely night in Jail.\n";
-	 		player.incrementTurnsInJail();
-	 		return;
+	 		this->output_handle_ << " Player " << player.getId() << " spends another lonely night in Jail.\n";
+		 	player.incrementTurnsInJail();
+		 	return;
 	 	}
 	 }
 
@@ -226,7 +309,57 @@ void Simulator::advancePlayerBy(Player& player, int roll) {
 	//Increase the destination Property's counter
 	destination.incrementCount();
 	//Have the Property respond to the Player if necessary
-	destination.respond(this->board_, player, this->output_handle_);
+	if(destination.name() == "Go To Jail") {
+		this->arrestPlayer(player);
+	} else
+	if(destination.name() == "Chance") {
+		this->drawChance(player);
+	} else
+	if(destination.name() == "Community Chest") {
+		this->drawCommunityChest(player);
+	}
+}
+
+/* Draws a Chance card and follows its description */
+void Simulator::drawChance(Player& player) {
+	//Copy the card from the front of the Chance deck and remove
+	//the original from the deck
+	Card card = this->chance_deck_.front();
+	this->chance_deck_.pop();
+	//Report the resulting card
+	this->output_handle_ << " Player " << player.getId() << " drew a ";
+	this->output_handle_ << "'" << card.description() << "'\n";
+	//Determine whether this is a 'Get out of Jail Free' card
+	if(card.description() == "Get Out of Jail Free") {
+		//Set the appropriate flag for the Player
+		player.hasGetOutOfJailChance = true;
+	} else {
+		//Follow the action labeled on the card
+		card.performAction(this->board_, player, this->output_handle_);
+		//Return the card to the back of the deck
+		this->chance_deck_.push(card);
+	}
+}
+
+/* Draws a Community Chest card and follows its description */
+void Simulator::drawCommunityChest(Player& player) {
+	//Copy the card from the front of the Community Chest deck and
+	//remove the original from the deck
+	Card card = this->community_chest_deck_.front();
+	this->community_chest_deck_.pop();
+	//Report the resulting card
+	this->output_handle_ << " Player " << player.getId() << " drew a ";
+	this->output_handle_ << "'" << card.description() << "'\n";
+	//Determine whether this is a 'Get out of Jail Free' card
+	if(card.description() == "Get Out of Jail Free") {
+		//Set the appropriate flag for the Player
+		player.hasGetOutOfJailCommunityChest = true;
+	} else {
+		//Follow the action labeled on the card
+		card.performAction(this->board_, player, this->output_handle_);
+		//Return the card to the back of the deck
+		this->community_chest_deck_.push(card);
+	}	
 }
 
 /* Moves a Player to the Jail, updating that Player's state */
