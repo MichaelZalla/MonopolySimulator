@@ -23,6 +23,8 @@ public:
 
 	static const int BOARD_SIZE = 40;
 	static const int JAIL_LOCATION = 10;
+	
+	static int wrapIndex(int n, int lower_bound = 0, int upper_bound = Board::BOARD_SIZE - 1 );
 
 	Board();
 	~Board();
@@ -39,8 +41,6 @@ private:
 
 	Queue<Property*> board_;
 	
-	int wrapIndex(int n, int lower_bound = 0, int upper_bound = Board::BOARD_SIZE - 1 ) const;
-
 };
 
 #endif

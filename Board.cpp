@@ -20,6 +20,30 @@
 
 /*** Public interface implementation ***/
 
+/**
+ * Takes a Property index that may reside outside of the valid index range
+ * and returns a valid index. Invali"d indices will be 'wrapped' around
+ * into a valid range (supports forward wrapping and backward wrapping).
+ * 
+ * See http://stackoverflow.com/questions/707370
+ *	
+ * @param 	n 	A board index
+ */
+//static
+int Board::wrapIndex(int n, int lower_bound, int upper_bound) {
+	int range_size = upper_bound - lower_bound + 1; //40, by default
+	if(n < lower_bound) {
+		//If the provided index falls below the lower_bound, bump it forward by
+		//range_size until it falls within the valid range
+		int lower_delta = lower_bound - n;
+		//Integer division (if the index is between (lower_bound - lower_bound,
+		//lower_bound], it will return zero. That's why we add 1 afterward
+		int ranges_between = lower_delta / range_size + 1;
+		n += range_size * ranges_between;
+	}
+	return lower_bound + (n - lower_bound) % range_size;
+}
+
 //Board class constructor
 Board::Board() { }
 
@@ -56,7 +80,7 @@ int Board::indexOf(Property& property) const {
  * @param 	n 	A Property index
  */
 Property& Board::propertyAt(int n) const {
-	return *(this->board_.at(this->wrapIndex(n)));
+	return *(this->board_.at(Board::wrapIndex(n)));
 } 	
 
 /**
@@ -69,7 +93,7 @@ Property& Board::propertyAt(int n) const {
  */
 Property& Board::propertyAt(Property& property, int offset) const {
 	int index = this->indexOf(property); //May throw an exception
-	return *(this->board_.at(this->wrapIndex(index + offset)));
+	return *(this->board_.at(Board::wrapIndex(index + offset)));
 }
 
 void Board::addProperty(Property& property) {
@@ -78,27 +102,4 @@ void Board::addProperty(Property& property) {
 }
 
 /*** Private method implementation ***/
-
-/**
- * Takes a Property index that may reside outside of the valid index range
- * and returns a valid index. Invali"d indices will be 'wrapped' around
- * into a valid range (supports forward wrapping and backward wrapping).
- * 
- * See http://stackoverflow.com/questions/707370
- *	
- * @param 	n 	A board index
- */
-int Board::wrapIndex(int n, int lower_bound, int upper_bound) const {
-	int range_size = upper_bound - lower_bound + 1; //40, by default
-	if(n < lower_bound) {
-		//If the provided index falls below the lower_bound, bump it forward by
-		//range_size until it falls within the valid range
-		int lower_delta = lower_bound - n;
-		//Integer division (if the index is between (lower_bound - lower_bound,
-		//lower_bound], it will return zero. That's why we add 1 afterward
-		int ranges_between = lower_delta / range_size + 1;
-		n += range_size * ranges_between;
-	}
-	return lower_bound + (n - lower_bound) % range_size;
-}
 

@@ -7,90 +7,80 @@
  * each Property object on the Board.
  */
 
-#include <fstream>
-
 //Forward declaration of class dependencies
 class Simulator;
+class Board;
 class Player;
 
 namespace CardActions {
 	
 	/* Sends the Player to Jail */
-	void goToJail(Board& board, Player& player, ofstream& output) {
-		player.setLocation(Board::JAIL_LOCATION);
-		board.propertyAt(Board::JAIL_LOCATION).incrementCount();
-		player.setDetention(true);
-		//Report the arrest
-		output << "Player " << player.getId() << " is hauled off to Jail!\n";
+	void goToJail(Simulator& simulator, Player& player) {
+		simulator.arrestPlayer(player);
 	}
 
 	/* Generic movement action */
-	void advanceToNthProperty(Board& board, Player& player, ofstream& output, int n) {
-		player.setLocation(n);
-		Property& property = board.propertyAt(n);
-		property.incrementCount();
-		//Report the move
-		output << "Player " << player.getId() << " moves to " << property.name() << "\n";
+	void advanceToNthProperty(Simulator& simulator, Player& player, int n) {
+		simulator.advancePlayerTo(player, n);
 	}
 	
-	void advanceToGo(Board& board, Player& player, ofstream& output) {
-		advanceToNthProperty(board, player, output, 0);
+	void advanceToGo(Simulator& simulator, Player& player) {
+		advanceToNthProperty(simulator, player, 0);
 	}
 
-	void advanceToIllinois(Board& board, Player& player, ofstream& output) {
-		advanceToNthProperty(board, player, output, 24);
+	void advanceToIllinois(Simulator& simulator, Player& player) {
+		advanceToNthProperty(simulator, player, 24);
 	}
 
-	void advanceToStCharles(Board& board, Player& player, ofstream& output) {
-		advanceToNthProperty(board, player, output, 11);
+	void advanceToStCharles(Simulator& simulator, Player& player) {
+		advanceToNthProperty(simulator, player, 11);
 	}
 
-	void advanceToNearestUtility(Board& board, Player& player, ofstream& output) {	
+	void advanceToNearestUtility(Simulator& simulator, Player& player) {	
 		int l = player.getLocation();
 		if(l > 12 && l < 28) {
 			//Move the Player to Water Works
-			advanceToNthProperty(board, player, output, 28);
+			advanceToNthProperty(simulator, player, 28);
 		} else {
 			//Move the Player to Electric Company
-			advanceToNthProperty(board, player, output, 12);
+			advanceToNthProperty(simulator, player, 12);
 		}
 	}
 
-	void advanceToNearestRailroad(Board& board, Player& player, ofstream& output) {
+	void advanceToNearestRailroad(Simulator& simulator, Player& player) {
 		int l = player.getLocation();
 		if(l > 35 || l < 5) {
 			//Move the Player to Reading Railroad
-			advanceToNthProperty(board, player, output, 5);
+			advanceToNthProperty(simulator, player, 5);
 		}
 		if(l > 5 && l < 15) {
 			//Move the Player to Pennsylvania Railroad
-			advanceToNthProperty(board, player, output, 15);
+			advanceToNthProperty(simulator, player, 15);
 		}
 		if(l > 15 && l < 25) {
 			//Move the Player to B. & O. Railroad
-			advanceToNthProperty(board, player, output, 25);
+			advanceToNthProperty(simulator, player, 25);
 		}
 		if(l > 25 && l < 35) {
 			//Move the Player to Short Line
-			advanceToNthProperty(board, player, output, 35);
+			advanceToNthProperty(simulator, player, 35);
 		}
 	}
 
-	void advanceToReadingRailroad(Board& board, Player& player, ofstream& output) {
-		advanceToNthProperty(board, player, output, 5);
+	void advanceToReadingRailroad(Simulator& simulator, Player& player) {
+		advanceToNthProperty(simulator, player, 5);
 	}
 
-	void advanceToBoardwalk(Board& board, Player& player, ofstream& output) {
-		advanceToNthProperty(board, player, output, 39);
+	void advanceToBoardwalk(Simulator& simulator, Player& player) {
+		advanceToNthProperty(simulator, player, 39);
 	}
 
-	void retreatThreeSpaces(Board& board, Player& player, ofstream& output) {
-		Property& current = board.propertyAt(player.getLocation());
-		int n = board.indexOf(board.propertyAt(current, -3));
-		advanceToNthProperty(board, player, output, n);
+	void retreatThreeSpaces(Simulator& simulator, Player& player) {
+		int current = player.getLocation();
+		advanceToNthProperty(simulator, player, Board::wrapIndex(current - 3));
 	}
 	
-	void getOutOfJail(Board& board, Player& player, ofstream& output) {
+	void getOutOfJail(Simulator& simulator, Player& player) {
 		if(!player.hasGetOutOfJailChance) {
 			//Acquire a 'Get out of Jail Free' card from the 'Chance' deck
 			player.hasGetOutOfJailChance = true;

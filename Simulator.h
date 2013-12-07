@@ -38,6 +38,9 @@ public:
 
 	void runSimulation();
 
+	void advancePlayerTo(Player& player, int n);
+	void arrestPlayer(Player& player);
+
 private:
 
 	/*** Private member variables ***/
@@ -69,7 +72,6 @@ private:
 	
 	void drawChance(Player& player);
 	void drawCommunityChest(Player& player);
-	void arrestPlayer(Player& player);
 	void releasePlayer(Player& player);
 
 	//Helper methods

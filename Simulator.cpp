@@ -103,6 +103,44 @@ void Simulator::runSimulation() {
 
 }
 
+/**
+ * This public is necessary, in fitting with my program's poor design, to allow
+ * subsequent Property actions occur after a Player lands on a 'Chance' or
+ * 'Community Chest' space (specifically, to allow Players to pick up a 'Community
+ * Chest' card after landing on a 'Chance' space and drawing 'Go back three spaces')
+ *
+ * @param 	player 	A reference to a Player object
+ * @param 	n 		A Property index
+ */
+void Simulator::advancePlayerTo(Player& player, int n) {
+	Property& destination = this->board_.propertyAt(n);
+	player.setLocation(this->board_.indexOf(destination));
+	//Report the Player's move
+	this->output_handle_ << "Player " << player.getId() << " landed on ";
+	this->output_handle_ << destination.name() << "\n";
+	//Increase the destination Property's counter
+	destination.incrementCount();
+	//Have the Property respond to the Player if necessary
+	if(destination.name() == "Go To Jail") {
+		this->arrestPlayer(player);
+	} else
+	if(destination.name() == "Chance") {
+		this->drawChance(player);
+	} else
+	if(destination.name() == "Community Chest") {
+		this->drawCommunityChest(player);
+	}
+}
+
+/* Moves a Player to the Jail, updating that Player's state */
+void Simulator::arrestPlayer(Player& player) {
+	player.setLocation(Board::JAIL_LOCATION);
+	this->board_.propertyAt(Board::JAIL_LOCATION).incrementCount();
+	player.setDetention(true);
+	//Report the arrest
+	this->output_handle_ << " -> Player " << player.getId() << " is hauled off to Jail!\n";
+}
+
 /*** Private method implementation ***/
 
 /* Toggles program output. Redirects unwanted output to /dev/null */
@@ -289,7 +327,7 @@ void Simulator::simulateTurn(Player& player, int r_depth) {
 	 	/* Case 2 */
 	 	if(doubles && r_depth < 2) {
 	 		this->advancePlayerBy(player, die1 * 2);
-	 		//We must check again for Player::isDetained ... If they landed on
+	 		//We must check again for Player::isDetained; if they landed on
 	 		//'Go To Jail', then this value will have changed, and landing in Jail
 	 		//loses you your right to re-roll on doubles!
 	 		if(!player.isDetained()) {
@@ -312,7 +350,14 @@ void Simulator::simulateTurn(Player& player, int r_depth) {
 			//Let the Player advance according to their roll
 	 		this->releasePlayer(player);
 	 		this->advancePlayerBy(player, die1 + die2);
-	 		return this->simulateTurn(player, r_depth + 1);
+	 		//We must check again for Player::isDetained; if they have landed on
+	 		//'Go To Jail', or have drawn a 'Go To Jail' card, then this value will
+	 		//have changed!
+	 		if(!player.isDetained()) {
+	 			return this->simulateTurn(player, r_depth + 1);
+	 		} else {
+	 			return;
+	 		}
 	 	} else
 	 	/* Case 5 */
 	 	if(player.getTurnsInJail() >= Player::MAXIMUM_JAIL_SENTENCE) {
@@ -376,7 +421,7 @@ void Simulator::drawChance(Player& player) {
 		player.hasGetOutOfJailChance = true;
 	} else {
 		//Follow the action labeled on the card
-		card.performAction(this->board_, player, this->output_handle_);
+		card.performAction(*this, player);
 		//Return the card to the back of the deck
 		this->chance_deck_.push(card);
 	}
@@ -397,19 +442,10 @@ void Simulator::drawCommunityChest(Player& player) {
 		player.hasGetOutOfJailCommunityChest = true;
 	} else {
 		//Follow the action labeled on the card
-		card.performAction(this->board_, player, this->output_handle_);
+		card.performAction(*this, player);
 		//Return the card to the back of the deck
 		this->community_chest_deck_.push(card);
 	}
-}
-
-/* Moves a Player to the Jail, updating that Player's state */
-void Simulator::arrestPlayer(Player& player) {
-	player.setLocation(Board::JAIL_LOCATION);
-	this->board_.propertyAt(Board::JAIL_LOCATION).incrementCount();
-	player.setDetention(true);
-	//Report the arrest
-	this->output_handle_ << " -> Player " << player.getId() << " is hauled off to Jail!\n";
 }
 
 /* Releases the Player from Jail, updating the Player's state */

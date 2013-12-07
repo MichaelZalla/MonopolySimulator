@@ -23,7 +23,7 @@ class Card {
 
 public:
 
-	typedef void (*CardAction) (Board& board, Player& player, ofstream& output);
+	typedef void (*CardAction) (Simulator& simulator, Player& player);
 
 	//Card class construtor
 	Card(string description, CardAction action = NULL)
@@ -32,9 +32,9 @@ public:
 	//Accessors methods
 	string description() { return this->description_; }
 
-	void performAction(Board& board, Player& player, ofstream& output) {
+	void performAction(Simulator& simulator, Player& player) {
 		if(this->action_ != NULL) {
-			this->action_(board, player, output);
+			this->action_(simulator, player);
 		}
 	}
 
