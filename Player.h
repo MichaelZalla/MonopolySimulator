@@ -20,6 +20,9 @@ public:
 
 	static const int MAXIMUM_JAIL_SENTENCE = 2;
 
+	bool hasGetOutOfJailChance;
+	bool hasGetOutOfJailCommunityChest;
+
 	/**
 	 * Player class constructor. Takes a seed with which to seed the Player's own random
 	 * number generator (which should stay in sync across all Players), as well as a
@@ -29,7 +32,12 @@ public:
 	 * @param 	output_channel 	A reference to an ofstream provided by the Simulator object
 	 */
 	Player(unsigned int id)
-	: id_(id), location_(0), detained_(false), turns_in_jail_(0) { }
+	: id_(id),
+	  location_(0),
+	  detained_(false),
+	  turns_in_jail_(0),
+	  hasGetOutOfJailChance(false),
+	  hasGetOutOfJailCommunityChest(false) { }
 	
 	//Player class destructor
 	~Player() { }
@@ -60,7 +68,7 @@ private:
 	int location_;
 	bool detained_;
 	int turns_in_jail_;
-	
+
 };
 
 #endif

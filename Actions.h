@@ -104,11 +104,16 @@ namespace Actions {
 		int n = board.indexOf(board.propertyAt(current, -3));
 		advanceToNthProperty(board, player, output, n);
 	}
-	/*	
-	void getOutOfJail(Player& player) {
 	
+	void getOutOfJail(Board& board, Player& player, ofstream& output) {
+		if(!player.hasGetOutOfJailChance) {
+			//Acquire a 'Get out of Jail Free' card from the 'Chance' deck
+			player.hasGetOutOfJailChance = true;
+		} else {
+			//Acquire a 'Get out of Jail Free' card from the 'Community Chest' deck
+			player.hasGetOutOfJailCommunityChest = true;
+		}
 	}
-	*/
 
 };
 
