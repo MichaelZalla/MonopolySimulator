@@ -4,7 +4,7 @@ CFLAGS = -c -ggdb -I.
 LDFLAGS =
 
 # List your CPP files here
-SOURCES = Simulator.cpp Board.cpp
+SOURCES = main.cpp Simulator.cpp Board.cpp
 EXECUTABLE = a.out
 
 # List your Test.h files here
