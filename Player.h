@@ -59,7 +59,11 @@ public:
 		this->detained_ = val;
 	}
 	void incrementTurnsInJail() {
-		this->turns_in_jail_++;
+		if(this->detained_) {
+			this->turns_in_jail_++;
+		} else {
+			//No-op
+		}
 	}
 	
 private:

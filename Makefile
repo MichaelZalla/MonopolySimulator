@@ -1,5 +1,6 @@
 CC = g++
-CFLAGS = -c -Wall -ggdb -I. 
+#CFLAGS = -c -Wall -ggdb -I. 
+CFLAGS = -c -ggdb -I.
 LDFLAGS =
 
 # List your CPP files here
@@ -8,7 +9,12 @@ EXECUTABLE = a.out
 
 # List your Test.h files here
 #TESTS = PropertyTest.h BoardTest.h
-TESTS = tests/CardTest.h
+TESTS = tests/ListTest.h \
+		tests/QueueTest.h \
+		tests/BoardTest.h \
+		tests/PropertyTest.h \
+		tests/PlayerTest.h
+ 		#tests/CardTest.h
 		#tests/PropertyTest.h tests/BoardTest.h \
 		#tests/PlayerTest.h \
 		#tests/ChanceDeckTest.h

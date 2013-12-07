@@ -27,7 +27,7 @@ class Property {
 public:
 
 	//Class constructor
-	Property(string name) : name_(name) { }
+	Property(string name) : name_(name), count_(0) { }
 
 	//Accessors methods
 	string name() { return this->name_; }

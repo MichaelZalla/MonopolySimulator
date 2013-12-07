@@ -29,7 +29,6 @@
  *	
  * @param 	n 	A board index
  */
-//static
 int Board::wrapIndex(int n, int lower_bound, int upper_bound) {
 	int range_size = upper_bound - lower_bound + 1; //40, by default
 	if(n < lower_bound) {
